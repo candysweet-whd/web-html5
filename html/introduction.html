@@ -1,8 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>彩虹糖果小站——个人简历</title>
 
   <!-- 多个css样式表混合重用，使网页布局整体协调一致 -->
@@ -14,10 +15,11 @@
 </head>
 
 <body>
-  <!-- 网页布局：凝胶布局 -->
+  <!-- 个人简介布局特点：凝胶布局+表格布局 -->
   <div id="introduction">
-    <!-- 页眉header开始 -->
+    <!-- 页眉区header -->
     <header>
+      <!-- 每个页面的页眉区header都有一个公共类header-section用来放置内容，宽度固定，内容居中 -->
       <section class="header-section">
         <div class="logo_1">
           <img src="../images/common/logo.jpg">
@@ -34,14 +36,16 @@
         </div>
       </section>
     </header>
-    <!-- 页眉header结束 -->
+    <!-- end of header -->
 
-    <!-- 导航栏nav开始 -->
+    <!-- 导航栏nav -->
     <nav class="naver clearfix">
+      <!-- 每个页面的导航栏都有一个公共类naver-section用来放置内容，宽度固定，内容居中 -->
       <section class="naver-section">
+        <!-- 导航栏共分为六个部分：index、introduction、experiment、personality、award、feedback -->
         <ul>
           <li class="">
-            <a href="../html/index.html" title="我的主页">我的主页</a>
+            <a href="../index.html" title="我的主页">我的主页</a>
           </li>
           <li class="current">
             <a href="../html/introduction.html" title="个人简历">个人简历</a>
@@ -62,27 +66,35 @@
         <div class="searchIcon"></div>
       </section>
     </nav>
-    <!-- 导航栏nav结束 -->
+    <!-- end of nav -->
 
-    <!-- 个人简历内容部分开始 -->
-    <!-- 个人简历布局：凝胶布局+表格布局 -->
+    <!-- 个人简历introduction -->
+    <!-- 每个页面的内容区都有一个公共类content盛放内容，个人简历页面凝胶布局：宽度固定，内容居中 -->
     <div class="content">
+
+      <!-- 个人简历内容区分为两大区域：section.cont.first和section.cont.second -->
       <section class="cont first">
+        <!-- 1号区域section.cont.first由两部分构成：title和information basic -->
+
+        <!-- 每个标题都由一个公共类title包住 -->
         <div class="title">
-          <span class="star"></span>Basic Information<span class="star"></span>
-          <aside id="code">
-            <p>扫码联系我</p>
-            <img src="../images/index/wechat.jpg" title="wechat 微信">
-            <img src="../images/index/QQ.jpg" title="tencent QQ">
-          </aside>
+          <span class="star"></span>
+          Basic Information
+          <span class="star"></span>
         </div>
+        <!-- end of title -->
+
+        <!-- 所有装饰图片元素都被aside边栏容器盛放 -->
         <aside>
           <img class="decorate fighting" src="../images/introduction/fighting.png">
         </aside>
         <br>
+
         <div class="information basic">
+          <!-- 每个information都有一个公共类inner用来放置内容，宽度固定，内容居中 -->
           <div class="inner">
             <table>
+              <!-- information basic的内容用表格table展示: 局部表格布局 -->
               <tbody>
                 <tr>
                   <td>
@@ -100,6 +112,7 @@
                   <td>
                     照&nbsp;&nbsp;片
                   </td>
+                  <!-- 类photo用来放置照片 -->
                   <td class="photo">
                   </td>
                 </tr>
@@ -221,29 +234,45 @@
                 </tr>
               </tbody>
             </table>
+            <!-- end of table -->
           </div>
         </div>
+        <!-- end of information basic -->
+
       </section>
+      <!-- end of cont first -->
+
       <section class="cont second">
+        <!-- 2号区域section.cont.first由两部分构成：title和information detailed -->
+
+        <!-- 每个标题都由一个公共类title包住 -->
         <div class="title">
-          <span class="star"></span>Detailed Information<span class="star"></span>
-          <aside>
-            <img class="decorate kids" src="../images/introduction/kids.jpg">
-          </aside>
-          <aside>
-            <img class="decorate rocket" src="../images/introduction/rocket.png">
-          </aside>
+          <span class="star"></span>
+          Detailed Information
+          <span class="star"></span>
         </div>
+        <!-- end of title  -->
+
+        <!-- 所有装饰图片元素都被aside边栏容器盛放 -->
+        <aside>
+          <img class="decorate kids" src="../images/introduction/kids.jpg">
+        </aside>
+        <aside>
+          <img class="decorate rocket" src="../images/introduction/rocket.png">
+        </aside>
         <br>
+
         <div class="information detailed">
+          <!-- 每个information都有一个公共类inner用来放置内容，宽度固定，内容居中 -->
           <div class="inner">
             <table>
+              <!-- information detailed的内容用表格table展示: 局部表格布局 -->
               <tbody>
                 <tr>
-                  <!-- 合并单元格 -->
                   <td>技&nbsp;能&nbsp;证&nbsp;书</td>
                 </tr>
                 <tr>
+                  <!-- 每个文字回答列都用一个公共类answer来放置 -->
                   <td class="answer">
                     <p>
                       全国音乐协会古筝十级证书；<br>
@@ -256,10 +285,12 @@
                     </p>
                   </td>
                 </tr>
+
                 <tr>
                   <td>实&nbsp;践&nbsp;经&nbsp;历</td>
                 </tr>
                 <tr>
+                  <!-- 每个文字回答列都用一个公共类answer来放置 -->
                   <td class="answer">
                     <p>
                       2017年9月-至今任职班级文艺委员；<br>
@@ -271,10 +302,12 @@
                     </p>
                   </td>
                 </tr>
+
                 <tr>
                   <td>个&nbsp;人&nbsp;简&nbsp;述</td>
                 </tr>
                 <tr>
+                  <!-- 每个文字回答列都用一个公共类answer来放置 -->
                   <td class="answer">
                     <p class="description">
                       在学生工作方面，我担任班级文艺委员一职，并在院学生会文艺部担任主要负责人，秉承为师生服务的宗旨，我注重和同学们的联系，成为同学与老师之间沟通的桥梁。
@@ -286,15 +319,29 @@
                 </tr>
               </tbody>
             </table>
+            <!-- end of table -->
           </div>
         </div>
+        <!-- end of information detailed -->
+
       </section>
+      <!-- end of cont second -->
+
+      <!-- 固定在页面上的联系方式都用一个aside边栏容器放置 -->
+      <aside id="code">
+        <p>扫码联系我</p>
+        <img src="../images/index/wechat.jpg" title="wechat 微信">
+        <img src="../images/index/QQ.jpg" title="tencent QQ">
+      </aside>
       <aside id="phone">
         <p>联系电话：</p>
         <p>18076768769 / 15977323075</p>
       </aside>
+
     </div>
-    <!-- 页尾footer开始 -->
+    <!-- end of content -->
+
+    <!-- 页尾区footer -->
     <footer class="footer">
       <div class="copyright">
         <span>❤</span>
@@ -303,8 +350,9 @@
         © 2020 All Rights Reserved.
       </div>
     </footer>
-    <!-- 页尾footer结束 -->
+    <!-- end of footer -->
   </div>
+  <!-- end of introduction -->
 </body>
 
 </html>

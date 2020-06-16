@@ -1,74 +1,84 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>彩虹糖果小站——主页</title>
-  <link rel="stylesheet" type="text/css" href="../css/index.css">
-  <link rel="icon" href="../images/common/symbol.ico">
+
+  <!-- 引用index.css样式表 -->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <link rel="icon" href="images/common/symbol.ico">
 </head>
 
 <body>
-  <!-- 主页网页布局特点：凝胶布局 -->
+  <!-- 主页布局特点：凝胶布局 -->
   <div id="index">
-    <!-- 页眉header开始 -->
+    <!-- 页眉区header -->
     <header>
+      <!-- 每个页面的页眉区header都有一个公共类header-section用来放置内容，宽度固定，内容居中 -->
       <section class="header-section">
         <div class="logo_1">
-          <img src="../images/common/logo.jpg">
+          <img src="images/common/logo.jpg">
         </div>
         <div class="logo_2">
-          <img src="../images/common/logo.jpg">
+          <img src="images/common/logo.jpg">
         </div>
         <div class="logo_1">
-          <img src="../images/common/logo.jpg">
+          <img src="images/common/logo.jpg">
         </div>
         <h4 class="welcome">Welcome to the world of Candy 带你从这里认识我</h4>
         <div class="picture">
-          <img src="../images/common/header.jpg">
+          <img src="images/common/header.jpg">
         </div>
       </section>
     </header>
-    <!-- 页眉header结束 -->
+    <!-- end of header -->
 
-    <!-- 导航栏nav开始 -->
+    <!-- 导航栏nav -->
     <nav class="naver clearfix">
+      <!-- 每个页面的导航栏都有一个公共类naver-section用来放置内容，宽度固定，内容居中 -->
       <section class="naver-section">
+        <!-- 导航栏共分为六个部分：index、introduction、experiment、personality、award、feedback -->
         <ul>
           <li class="current">
-            <a href="../html/index.html" title="我的主页">我的主页</a>
+            <a href="index.html" title="我的主页">我的主页</a>
           </li>
           <li class="">
-            <a href="../html/introduction.html" title="个人简历">个人简历</a>
+            <a href="html/introduction.html" title="个人简历">个人简历</a>
           </li>
           <li class="">
-            <a href="../html/experiment.html" title="成长经历">成长经历</a>
+            <a href="html/experiment.html" title="成长经历">成长经历</a>
           </li>
           <li class="">
-            <a href="../html/personality.html" title="风采特辑">风采特辑</a>
+            <a href="html/personality.html" title="风采特辑">风采特辑</a>
           </li>
           <li class="">
-            <a href="../html/award.html" title="荣誉展示">荣誉展示</a>
+            <a href="html/award.html" title="荣誉展示">荣誉展示</a>
           </li>
           <li class="">
-            <a href="../html/feedback.html" title="反馈建议">反馈建议</a>
+            <a href="html/feedback.html" title="反馈建议">反馈建议</a>
           </li>
         </ul>
         <div class="searchIcon"></div>
       </section>
     </nav>
-    <!-- 导航栏nav结束 -->
+    <!-- end of nav -->
 
-    <!-- 主页内容部分开始 -->
-    <!-- 主页内容布局：凝胶布局 -->
+    <!-- 我的主页index -->
+    <!-- 每个页面的内容区都有一个公共类content盛放内容，主页凝胶布局：宽度固定，内容居中 -->
     <div class="content">
+
+      <!-- 主页内容区分为两大区域：content_left和content_right -->
       <section class="content_left">
+        <!-- 1号区域content_left又被划分为两个部分：brief和prize -->
         <div class="brief">
           <div class="more_btn" type="更多">
-            <a href="../html/introduction.html" textvalue="个人简历>>" title="个人简历">个人简历&gt;&gt;</a>
+            <a href="html/introduction.html" textvalue="个人简历>>" title="个人简历">个人简历&gt;&gt;</a>
           </div>
-          <a href="../html/introduction.html" title="个人简历">
-            <img src="../images/index/brief.jpg">
+          <a href="html/introduction.html" title="个人简历">
+            <img src="images/index/brief.jpg">
             <h2>About me</h2>
             <p>姓名：王虹叠</p>
             <p>英文名：Candy</p>
@@ -79,38 +89,38 @@
           </a>
           <ul class="linkmore">
             <li>
-              <a class="iconfont icon-zhuye" href="../html/index.html" title="彩虹糖果小站"></a>
+              <a class="iconfont icon-zhuye" href="index.html" title="彩虹糖果小站"></a>
             </li>
             <li>
-              <a class="iconfont icon-youxiang" href="../html/introduction.html" title="我的邮箱"></a>
+              <a class="iconfont icon-youxiang" href="html/introduction.html" title="我的邮箱"></a>
             </li>
             <li id="tencent">
               <a class="iconfont icon-qq" href="#" title="扫一扫添加QQ"></a>
               <i>
-                <img src="../images/index/QQ.jpg">
+                <img src="images/index/QQ.jpg">
               </i>
             </li>
             <li id="weixin">
               <a href="#" class="iconfont icon-weixin" title="扫一扫添加微信"></a>
               <i>
-                <img src="../images/index/wechat.jpg">
+                <img src="images/index/wechat.jpg">
               </i>
             </li>
           </ul>
         </div>
-
+        <!-- end of brief -->
         <div class="prize">
           <div class="medal">
-            <img src="../images/index/exhibition.jpg">
+            <img src="images/index/exhibition.jpg">
             <h5>荣誉专栏</h5>
           </div>
           <div class="more_btn" type="更多">
-            <a href="../html/award.html" textvalue="荣誉展示" title="荣誉展示">查看更多&gt;&gt;</a>
+            <a href="html/award.html" textvalue="荣誉展示" title="荣誉展示">查看更多&gt;&gt;</a>
           </div>
           <ul class="prize_list">
             <li>
               <div class="prize_cont">
-                <a href="../html/award.html" title="荣誉展示">
+                <a href="html/award.html" title="荣誉展示">
                   <p>2018-2019学年五四表彰校级优秀学生干部</p>
                   <p>2019-2020学年优秀学生二等奖学金</p>
                   <p>2019年湖北赛区全国全民健身操大赛自由舞蹈一等奖</p>
@@ -124,17 +134,22 @@
             </li>
           </ul>
         </div>
+        <!-- end of prize -->
       </section>
-
+      <!-- end of content_left -->
       <section class="content_right">
-        <article class="article-1">
-          <aside class="article-1_left">
+        <!-- 2号区域content_right也被划分为两个板块：article和essay -->
+        <article class="article">
+          <!-- article分为两个部分：左侧边栏区article_left和右侧内容区article_right -->
+          <aside class="article_left">
+            <!-- article_left用来放置图片 -->
             <a href="http://xagx.zuel.edu.cn/2019/1212/c4032a230995/page.htm" title="学子荣誉 | 心之所向，素以履往">
-              <img class="article-1_picture" src="../images/index/article-1.jpg" alt="学子荣誉 | 心之所向，素以履往">
+              <img class="article_picture" src="images/index/article.jpg" alt="学子荣誉 | 心之所向，素以履往">
             </a>
           </aside>
-          <div class="detail">
-            <header class="article-1_title">
+          <div class="article_right">
+            <!-- article_right从上至下依次为header文章标题、p.news文章内容、aside.article-meta文章拓展内容 -->
+            <header class="article_title">
               <h2>
                 <a href="http://xagx.zuel.edu.cn/2019/1212/c4032a230995/page.htm" title="学子荣誉 | 心之所向，素以履往">学子荣誉 |
                   心之所向，素以履往
@@ -164,19 +179,23 @@
             </aside>
           </div>
         </article>
-
+        <!-- end of article -->
         <div class="essay">
           <h5 class="header">我的推文</h5>
+          <!-- essay被分为两个部分：左侧边栏区essay_left和右侧essay_right -->
           <div class="inner">
             <div class="container">
               <aside class="essay_left">
+                <!-- essay_left用来放置推文图片 -->
                 <a href="https://mp.weixin.qq.com/s/DMYHCJpHy_rAOUyBc1hgGQ" title="团学 | 工程文艺离完美只差一个你">
-                  <img src="../images/index/article-2.jpg" alt="团学 | 工程文艺离完美只差一个你">
+                  <img src="images/index/article-2.jpg" alt="团学 | 工程文艺离完美只差一个你">
                 </a>
               </aside>
-              <div class="essay_cont">
+              <div class="essay_right">
+                <!-- essay_right由两个部分组成：无序列表ul推文内容和边栏essay_more按钮 -->
                 <ul>
                   <li>
+                    <!-- 每个li中有一个公共类essay_title和一个公共类description -->
                     <header class="essay_title">
                       <h5>
                         <a href="https://mp.weixin.qq.com/s/DMYHCJpHy_rAOUyBc1hgGQ" title="团学 | 工程文艺离完美只差一个你">团学 |
@@ -210,18 +229,21 @@
                     </a>
                   </li>
                 </ul>
+                <aside class="essay_more">
+                  <a href="html/personality.html" title="更多推文">更多推文</a>
+                </aside>
               </div>
-              <aside class="essay_more">
-                <a href="../html/personality.html" title="更多推文">更多推文</a>
-              </aside>
             </div>
           </div>
         </div>
+        <!-- end of essay -->
       </section>
-    </div>
-    <!-- 主页内容部分结束 -->
+      <!-- end of content_right -->
 
-    <!-- 页尾footer开始 -->
+    </div>
+    <!-- end of content -->
+
+    <!-- 页尾footer -->
     <footer class="footer">
       <div class="copyright">
         <span>❤</span>
@@ -230,8 +252,9 @@
         © 2020 All Rights Reserved.
       </div>
     </footer>
-    <!-- 页尾footer结束 -->
+    <!-- end of footer -->
   </div>
+  <!-- end of index -->
 </body>
 
 </html>

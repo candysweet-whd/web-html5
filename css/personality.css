@@ -72,13 +72,13 @@ video.second {
   margin-left: 10px;
   float: left;
 }
-.tab_buttons {
+.tab {
   width: 100%;
   margin-top: -10px;
   border-bottom: 1px solid #e4e3e3;
   overflow: hidden;
 }
-.tab_buttons li {
+.tab li {
   font-size: 16px;
   font-weight: 550;
   line-height: 1.4em;
@@ -193,25 +193,21 @@ ul .date {
   height: 26px;
   float: left;
   margin-left: 13px;
+  font: normal 12px "Microsoft YaHei";
+  text-align: center;
 }
 .date .date-y {
   height: 15px;
   line-height: 15px;
-  background-color: #ec5f4c;
   color: #fff;
-  font-size: 12px;
-  font-family: "Microsoft YaHei";
-  text-align: center;
+  background-color: #ec5f4c;
 }
 .date .date-m-d {
   height: 12px;
   line-height: 12px;
-  border-top: 1px solid #f1d9c3;
   color: #d87838;
-  font-size: 12px;
-  font-family: "Microsoft YaHei";
-  text-align: center;
   background-color: #fff;
+  border-top: 1px solid #f1d9c3;
 }
 #works_list li .title {
   width: 270px;

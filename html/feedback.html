@@ -1,9 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>彩虹糖果小站——反馈建议</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- 多个css样式表混合重用，使网页布局整体协调一致 -->
   <link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -14,10 +15,11 @@
 </head>
 
 <body>
-  <!-- 反馈建议网页布局：凝胶布局 -->
+  <!-- 反馈建议网页布局：凝胶布局+表格布局 -->
   <div id="feedback">
-    <!-- 页眉header开始 -->
+    <!-- 页眉区header -->
     <header>
+      <!-- 每个页面的页眉区header都有一个公共类header-section用来放置内容，宽度固定，内容居中 -->
       <section class="header-section">
         <div class="logo_1">
           <img src="../images/common/logo.jpg">
@@ -28,20 +30,21 @@
         <div class="logo_1">
           <img src="../images/common/logo.jpg">
         </div>
-        <h4 class="welcome">Welcome to the world of Candy 带你从这里认识我</h4>
+        <h4 class="welcome">The feedback helped me improve 学无止境，不断进步</h4>
         <div class="picture">
           <img src="../images/common/header.jpg">
         </div>
       </section>
     </header>
-    <!-- 页眉header结束 -->
+    <!-- end of header -->
 
-    <!-- 导航栏nav开始 -->
+    <!-- 导航栏nav -->
     <nav class="naver clearfix">
+      <!-- 每个页面的导航栏都有一个公共类naver-section用来放置内容，宽度固定，内容居中 -->
       <section class="naver-section">
         <ul>
           <li class="">
-            <a href="../html/index.html" title="我的主页">我的主页</a>
+            <a href="../index.html" title="我的主页">我的主页</a>
           </li>
           <li class="">
             <a href="../html/introduction.html" title="个人简历">个人简历</a>
@@ -62,12 +65,16 @@
         <div class="searchIcon"></div>
       </section>
     </nav>
-    <!-- 导航栏nav结束 -->
+    <!-- end of nav -->
 
-    <!-- 反馈建议内容部分开始 -->
+    <!-- 反馈建议feedback -->
+    <!-- 每个页面的内容区都有一个公共类content盛放内容，反馈建议页面凝胶布局：宽度固定，内容居中 -->
     <div class="content">
-      <section class="content_top-section">
+
+      <!-- 反馈建议内容分为两大区域：content_top和content_bottom -->
+      <section class="content_top">
         <div class="content_top-inner">
+          <!-- 1号区域content_top又被划分为三个部分：content-header、form和分界边栏aside -->
           <header class="content-header">
             <div class="title">
               <h2>PART ONE --- SURVEY</h2>
@@ -79,10 +86,15 @@
               </span>
             </div>
           </header>
+          <!-- end of content-header -->
+
           <!-- 反馈建议采用提交表单form形式设计 -->
           <form id="survey" name="survey" action="feedback.php" method="post">
             <!-- 将表单内容放在自定义的表格中：表格布局 -->
+
+            <!-- 表格分成两部分内容：基本信息+网站反馈，表格的每一行都放在一个公共类tableRow中 -->
             <div class="tableRow">
+              <!-- 表格的每一行分成四列，都放在p容器中，每一标题列都会有一个公共类row-title -->
               <p class="row-title">基本信息</p>
               <p></p>
               <p></p>
@@ -99,8 +111,6 @@
                 <input class="choice" type="radio" name="choice" value="male">男（M）
                 <input class="choice" type="radio" name="choice" value="female">女（F）
               </p>
-            </div>
-            <div class="tableRow">
             </div>
             <div class="tableRow">
               <p>Q Q：</p>
@@ -124,7 +134,9 @@
                 <input class="text-field" type="text" data-type="input-textbox" name="email" placeholder=" 请填写邮箱地址*">
               </p>
             </div>
+
             <div class="tableRow">
+              <!-- 每一标题列都会有一个公共类row-title -->
               <p class="row-title">网站反馈</p>
               <p></p>
               <p></p>
@@ -175,12 +187,17 @@
               <p></p>
             </div>
           </form>
+          <!-- end of form -->
+
+          <!-- 用一个aside容器放置图片 -->
+          <aside class="star-3"></aside>
         </div>
-        <aside class="star-3"></aside>
       </section>
+      <!-- end of content_top -->
 
       <section class="content_bottom">
         <div class="content_bottom-inner">
+          <!-- 2号区域content_bottom也被划分为三个部分：content-header、form和contact-buttons -->
           <header class="content-header">
             <div class="title">
               <h2 class="contact">PART TWO --- CONTACT</h2>
@@ -189,8 +206,14 @@
               </div>
             </div>
           </header>
+          <!-- end of content-header -->
+
+          <!-- 留言内容采用表单form -->
           <form id="message" name="message" action="feedback.php" method="post">
+            <!-- 将表单内容放在自定义的表格中：表格布局 -->
+            <!-- 表格的每一行都放在一个公共类tableRow中 -->
             <div class="tableRow">
+              <!-- 表格的每一行分成两列都放在p容器中 -->
               <p>
                 <img src="../images/feedback/messageIcon.jpg">
               </p>
@@ -205,6 +228,8 @@
               </p>
             </div>
           </form>
+          <!-- end of form -->
+
           <div class="subheader">STAY IN TOUCH</div>
           <div class="contact-buttons">
             <a class="facebook" href="#" title="Facebook"></a>
@@ -213,13 +238,18 @@
             <a class="google" href="#" title="Google Plus"></a>
             <a class="pinterest" href="#" title="YouTube"></a>
           </div>
+          <!-- end of contact-buttons -->
       </section>
+      <!-- end of content_bottom -->
+
     </div>
+    <!-- end of content -->
+
+    <!-- aside边栏区放置装饰图片素材 -->
     <aside class="star-1"></aside>
     <aside class="star-2"></aside>
-    <!-- 反馈建议内容部分结束 -->
 
-    <!-- 页尾footer开始 -->
+    <!-- 页尾区footer -->
     <footer class="footer">
       <div class="copyright">
         <span>❤</span>
@@ -228,8 +258,9 @@
         © 2020 All Rights Reserved.
       </div>
     </footer>
-    <!-- 页尾footer结束 -->
+    <!-- end of footer -->
   </div>
+  <!-- end of feedback -->
 </body>
 
 </html>

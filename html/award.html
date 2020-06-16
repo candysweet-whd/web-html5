@@ -1,8 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>彩虹糖果小站——荣誉展示</title>
 
   <!-- 多个css样式表混合重用，使网页布局整体协调一致 -->
@@ -14,10 +15,11 @@
 </head>
 
 <body>
-  <!-- 荣誉展示网页布局：凝胶布局+表格布局 -->
+  <!-- award页面布局：凝胶布局+表格布局 -->
   <div id="award">
-    <!-- 页眉header开始 -->
+    <!-- 页眉区header -->
     <header>
+      <!-- 每个页面的页眉区header都有一个公共类header-section用来放置内容，宽度固定占满整个页面，内容居中 -->
       <section class="header-section">
         <div class="logo_1">
           <img src="../images/common/logo.jpg">
@@ -28,20 +30,22 @@
         <div class="logo_1">
           <img src="../images/common/logo.jpg">
         </div>
-        <h4 class="welcome">Welcome to the world of Candy 带你从这里认识我</h4>
+        <h4 class="welcome">When you work hard, it pays off 是金子总会闪闪发光</h4>
         <div class="picture">
           <img src="../images/common/header.jpg">
         </div>
       </section>
     </header>
-    <!-- 页眉header结束 -->
+    <!-- end of header -->
 
-    <!-- 导航栏nav开始 -->
+    <!-- 导航栏nav -->
     <nav class="naver clearfix">
+      <!-- 每个页面的导航栏都有一个公共类naver-section用来放置内容，宽度固定，内容居中 -->
       <section class="naver-section">
+        <!-- 导航栏共分为六个部分：index、introduction、experiment、personality、award、feedback -->
         <ul>
           <li class="">
-            <a href="../html/index.html" title="我的主页">我的主页</a>
+            <a href="../index.html" title="我的主页">我的主页</a>
           </li>
           <li class="">
             <a href="../html/introduction.html" title="个人简历">个人简历</a>
@@ -62,36 +66,52 @@
         <div class="searchIcon"></div>
       </section>
     </nav>
-    <!-- 导航栏nav结束 -->
+    <!-- end of nav -->
 
-    <!-- 荣誉展示内容部分开始 -->
-    <!-- 荣誉展示布局：整体凝胶布局 -->
+    <!-- 荣誉展示award -->
+    <!-- 每个页面的内容区都有一个公共类content盛放内容，award页面整体凝胶布局：宽度固定，内容居中 -->
     <div class="content">
+      <!-- 荣誉展示内容按网页结构可分成三个部分：header、award-section、aside -->
+
+      <!-- header包含标题元素和火箭装饰元素 -->
       <header>
-        <div class="rocket"></div>
+        <!-- div.rocket类用来盛放火箭图片 -->
+        <div id="rocket"></div>
         <h4 class="header">荣誉展示</h4>
       </header>
+      <!-- end of header -->
+
       <!-- 边栏区aside点缀整体页面 -->
-      <aside class="decrorate">
-        <div class="explode-left 1"></div>
+      <aside class="decorate">
+        <!-- 定义几个用来盛放图片元素的div -->
+        <div class="explode-left"></div>
         <div class="explode-left another"></div>
         <div class="astronaut-right"></div>
       </aside>
+      <!-- end of aside -->
+
       <section class="award-section">
-        <!-- 所获奖项使用表格table：局部表格布局 -->
+        <!-- award-section的内容使用表格table展示: 局部表格布局 -->
         <table class="award-table">
+          <!-- award-table由三个 标题title，次级标题column，详细描述specific 组成 -->
           <tbody>
+
+            <!-- 标题行：合并三列单元格 -->
             <tr>
+              <!-- 每一标题行都有一个公共类title放置内容，内容居中显示 -->
               <td class="title" colspan="3">
                 <span>2017——2018学年</span>
               </td>
             </tr>
+            <!-- 次级标题行：活动名称、所属级别、具体名次 -->
             <tr>
+              <!-- 该行的每一列都有一个公共类column放置内容，内容居中显示 -->
               <td class="column">活动名称</td>
               <td class="column">所属级别</td>
               <td class="column">具体名次</td>
             </tr>
             <tr>
+              <!-- 除了标题行和次级标题行，其他行的每一列都有一个公共类specific放置具体描述，内容居中 -->
               <td class="specific">2017年“足尖上的青春”校园舞蹈大赛</td>
               <td class="specific">校级</td>
               <td class="specific">三等奖</td>
@@ -106,6 +126,7 @@
               <td class="specific">院级</td>
               <td class="specific">文明宿舍</td>
             </tr>
+
             <tr>
               <td class="title" colspan="3">
                 <span>2018——2019学年</span>
@@ -151,6 +172,7 @@
               <td class="specific">院级</td>
               <td class="specific">文艺之星、最佳团体</td>
             </tr>
+
             <tr>
               <td class="title" colspan="3">
                 <span>2019——2020学年</span>
@@ -166,13 +188,17 @@
               <td class="specific">院级</td>
               <td class="specific">优秀学生干部</td>
             </tr>
+
           </tbody>
         </table>
+        <!-- end of award-table -->
       </section>
-    </div>
-    <!-- 荣誉展示内容部分结束 -->
+      <!-- end of award-section -->
 
-    <!-- 页尾footer开始 -->
+    </div>
+    <!-- end of content -->
+
+    <!-- 页尾footer -->
     <footer class="footer">
       <div class="copyright">
         <span>❤</span>
@@ -181,8 +207,10 @@
         © 2020 All Rights Reserved.
       </div>
     </footer>
-    <!-- 页尾footer结束 -->
+    <!-- end of footer -->
+
   </div>
+  <!-- end of award -->
 </body>
 
 </html>

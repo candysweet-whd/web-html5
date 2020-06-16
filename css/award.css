@@ -14,7 +14,7 @@ table {
 .header {
   margin-top: 10px;
 }
-.rocket {
+#rocket {
   /* 使用绝对定位，使火箭能够固定在页面上 */
   position: absolute;
   background: url(../images/award/rocket.png) no-repeat;

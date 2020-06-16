@@ -1,248 +1,284 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>彩虹糖果小站——成长经历</title>
+
+  <!-- 多个css样式表混合重用，使网页布局整体协调一致 -->
   <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <!-- experiment.css样式表优先，覆盖index.css样式表中样式 -->
   <link rel="stylesheet" type="text/css" href="../css/experiment.css">
+
   <link rel="icon" href="../images/common/symbol.ico">
 </head>
 
 <body>
-  <!-- 页眉header开始 -->
-  <header>
-    <section class="header-section">
-      <div class="logo_1">
-        <img src="../images/common/logo.jpg">
-      </div>
-      <div class="logo_2">
-        <img src="../images/common/logo.jpg">
-      </div>
-      <div class="logo_1">
-        <img src="../images/common/logo.jpg">
-      </div>
-      <h4 class="welcome">The sun shines after the storms 不经历风雨怎么见彩虹</h4>
-      <div class="picture">
-        <img src="../images/common/header.jpg">
-      </div>
-    </section>
-  </header>
-  <!-- 页眉header结束 -->
+  <!-- 成长经历布局特点：凝胶布局+flex弹性布局 -->
+  <div id="experiment">
+    <!-- 页眉header -->
+    <header>
+      <!-- 每个页面的页眉区header都有一个公共类header-section用来放置内容，宽度固定，内容居中 -->
+      <section class="header-section">
+        <div class="logo_1">
+          <img src="../images/common/logo.jpg">
+        </div>
+        <div class="logo_2">
+          <img src="../images/common/logo.jpg">
+        </div>
+        <div class="logo_1">
+          <img src="../images/common/logo.jpg">
+        </div>
+        <h4 class="welcome">The sun shines after the storms 不经历风雨怎么见彩虹</h4>
+        <div class="picture">
+          <img src="../images/common/header.jpg">
+        </div>
+      </section>
+    </header>
+    <!-- end of header -->
 
-  <!-- 导航栏nav开始 -->
-  <nav class="naver clearfix">
-    <section class="naver-section">
-      <ul>
-        <li class="">
-          <a href="../html/index.html" title="我的主页">我的主页</a>
-        </li>
-        <li class="">
-          <a href="../html/introduction.html" title="个人简历">个人简历</a>
-        </li>
-        <li class="current">
-          <a href="../html/experiment.html" title="成长经历">成长经历</a>
-        </li>
-        <li class="">
-          <a href="../html/personality.html" title="风采特辑">风采特辑</a>
-        </li>
-        <li class="">
-          <a href="../html/award.html" title="荣誉展示">荣誉展示</a>
-        </li>
-        <li class="">
-          <a href="../html/feedback.html" title="反馈建议">反馈建议</a>
-        </li>
-      </ul>
-      <div class="searchIcon"></div>
-    </section>
-  </nav>
-  <!-- 导航栏nav结束 -->
+    <!-- 导航栏nav -->
+    <nav class="naver clearfix">
+      <!-- 每个页面的导航栏都有一个公共类naver-section用来放置内容，宽度固定，内容居中 -->
+      <section class="naver-section">
+        <!-- 导航栏共分为六个部分：index、introduction、experiment、personality、award、feedback -->
+        <ul>
+          <li class="">
+            <a href="../index.html" title="我的主页">我的主页</a>
+          </li>
+          <li class="">
+            <a href="../html/introduction.html" title="个人简历">个人简历</a>
+          </li>
+          <li class="current">
+            <a href="../html/experiment.html" title="成长经历">成长经历</a>
+          </li>
+          <li class="">
+            <a href="../html/personality.html" title="风采特辑">风采特辑</a>
+          </li>
+          <li class="">
+            <a href="../html/award.html" title="荣誉展示">荣誉展示</a>
+          </li>
+          <li class="">
+            <a href="../html/feedback.html" title="反馈建议">反馈建议</a>
+          </li>
+        </ul>
+        <div class="searchIcon"></div>
+      </section>
+    </nav>
+    <!-- end of nav -->
 
-  <!-- 成长经历内容部分开始 -->
-  <div class="content">
-    <h5 class="header">成长时间轴</h5>
-    <section class="experiment-inner">
-      <ul class="tl">
-        <li class="tl-img">
-          <img class="image-1" src="../images/experiment/img-1.jpg">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span>Hello,everybody!
-              <br>My name is Hongdie Wang.I’m a student, and event daughter. However, who am I
-              <em>really</em>?
-            </span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <p class="text">
-            <span class="time">1998</span>
-          </p>
-          <img class="image-2" src="../images/experiment/img-2.png">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span><em>On Secptember 10th</em>, a little girl who named Candy born in Guilin,GuangXi province.</span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <p class="text">
-            <span class="time">2005</span>
-          </p>
-          <img class="image-3" src="../images/experiment/img-3.png">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span class="time">2005-2011</span>
-            <span><em>During 2005-2011</em>
-              <br>I had a wonderful memory in primary school and graduated successful in 2011.
-            </span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <img class="image-4" src="../images/experiment/img-4.jpg">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span>I started my new life in
-              <em>Foreign Language School attached to GuangXi Normal University</em>.
-            </span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <p class="text">
-            <span class="time">2011</span>
-          </p>
-          <img class="image-5" src="../images/experiment/img-5.jpg">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span>
-              <em>In 2014</em><br>
-              I began my senior school's career at the same school again.
-            </span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <p class="text">
-            <span class="time">2014</span>
-          </p>
-          <img class="image-6" src="../images/experiment/img-6.png">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span>
-              I had a ceremony for grown-ups before the three months of College Entrace Examination.
-            </span>
-          </p>
-        </li>
-        <li class="tl-img img-7">
-          <img class="image-7" src="../images/experiment/img-7.jpg">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span class="time">2014-2017</span>
-            <span>
-              College Entrace Examination - for the first significant time in my life.
-            </span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <p class="text">
-            <span class="time">2017</span>
-          </p>
-          <img class="image-8" src="../images/experiment/img-8.png">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span>
-              Fortunately,I came to the ZUEL,became one of members of it.
-            </span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <img class="image-9" src="../images/experiment/img-9.jpg">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span class="time">2017-2018</span>
-            <span>
-              A good college life started with hard military training.I'm looking forward for it!
-            </span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <img class="image-10" src="../images/experiment/img-10.jpg">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span>
-              <em>On Octorber 2018</em><br>
-              It is my honor to represent the college in the celebration of the 70th anniversary of our
-              university.
-            </span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <p class="text">
-            <span class="time">2018.10</span>
-          </p>
-          <img class="image-11" src="../images/experiment/img-11.jpg">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span class="time">2018-2019</span>
-            <span>
-              I devised the senior students' graduation party with my members.
-            </span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <img class="image-12" src="../images/experiment/img-12.png">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span>
-              I won the first prize with a group of friends on behalf of our university to participate
-              in a dance competition.
-            </span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <p class="text">
-            <span class="time">2019.06</span>
-          </p>
-          <img class="image-13" src="../images/experiment/img-13.jpg">
-        </li>
-        <li class="description">
-          <p class="text">
-            <span class="time">2019-2020</span>
-            <span>
-              I have participated in many competitions on behalf of my school and college
-              during these three years.
-            </span>
-          </p>
-        </li>
-        <li class="tl-img">
-          <img class="image-14" src="../images/experiment/img-14.jpg">
-        </li>
-        <img id="continue" src="../images/experiment/continue.png">
-      </ul>
-    </section>
-  </div>
-  <!-- 成长经历内容部分结束 -->
+    <!-- 成长经历experiment -->
+    <!-- 每个页面的内容区都有一个公共类content盛放内容，experiment页面整体凝胶布局：宽度固定，内容居中 -->
+    <div class="content">
 
-  <!-- 页尾footer开始 -->
-  <footer class="footer">
-    <div class="copyright">
-      <span>❤</span>
-      Sweet Candy - Web Design By Wang,
-      <br>
-      © 2020 All Rights Reserved.
+      <!-- 成长经历展示内容按网页结构可分成两个部分：h5标题、award-section -->
+      <h5 class="header">成长时间轴</h5>
+      <section class="experiment-section">
+        <!-- experiment-section的内容使用无序列表ul容器盛放 -->
+        <!-- ul使用弹性盒排列：局部弹性布局 -->
+        <ul class="tl">
+          <!-- 主要内容区大致分成 图片+描述文字 两大块 -->
+          <li class="tl-img">
+            <!-- 每张图片都用一个公共类tl-img来放置 -->
+            <img class="image-1" src="../images/experiment/img-1.jpg">
+          </li>
+          <li class="description">
+            <!-- 每段描述文字都用一个公共类description来放置 -->
+            <p class="text">
+              <!-- 所有的文字描述都被一个公共类text包住 -->
+              <span>Hello,everybody!
+                <br>My name is Hongdie Wang.I’m a student, and event daughter. However, who am I
+                <em>really</em>?
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <p class="text">
+              <!-- 每一个时间轴描述都用一个公共类time盛放 -->
+              <span class="time">1998</span>
+            </p>
+            <img class="image-2" src="../images/experiment/img-2.png">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span><em>On Secptember 10th</em>, a little girl who named Candy born in Guilin,GuangXi province.</span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <p class="text">
+              <span class="time">2005</span>
+            </p>
+            <img class="image-3" src="../images/experiment/img-3.png">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span class="time">2005-2011</span>
+              <span><em>During 2005-2011</em>
+                <br>I had a wonderful memory in primary school and graduated successful in 2011.
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <img class="image-4" src="../images/experiment/img-4.jpg">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span>I started my new life in
+                <em>Foreign Language School attached to GuangXi Normal University</em>.
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <p class="text">
+              <span class="time">2011</span>
+            </p>
+            <img class="image-5" src="../images/experiment/img-5.jpg">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span>
+                <em>In 2014</em><br>
+                I began my senior school's career at the same school again.
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <p class="text">
+              <span class="time">2014</span>
+            </p>
+            <img class="image-6" src="../images/experiment/img-6.png">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span>
+                I had a ceremony for grown-ups before the three months of College Entrace Examination.
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img img-7">
+            <img class="image-7" src="../images/experiment/img-7.jpg">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span class="time">2014-2017</span>
+              <span>
+                College Entrace Examination - for the first significant time in my life.
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <p class="text">
+              <span class="time">2017</span>
+            </p>
+            <img class="image-8" src="../images/experiment/img-8.png">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span>
+                Fortunately,I came to the ZUEL,became one of members of it.
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <img class="image-9" src="../images/experiment/img-9.jpg">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span class="time">2017-2018</span>
+              <span>
+                A good college life started with hard military training.I'm looking forward for it!
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <img class="image-10" src="../images/experiment/img-10.jpg">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span>
+                <em>On Octorber 2018</em><br>
+                It is my honor to represent the college in the celebration of the 70th anniversary of our
+                university.
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <p class="text">
+              <span class="time">2018.10</span>
+            </p>
+            <img class="image-11" src="../images/experiment/img-11.jpg">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span class="time">2018-2019</span>
+              <span>
+                I devised the senior students' graduation party with my members.
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <img class="image-12" src="../images/experiment/img-12.png">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span>
+                I won the first prize with a group of friends on behalf of our university to participate
+                in a dance competition.
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <p class="text">
+              <span class="time">2019.06</span>
+            </p>
+            <img class="image-13" src="../images/experiment/img-13.jpg">
+          </li>
+          <li class="description">
+            <p class="text">
+              <span class="time">2019-2020</span>
+              <span>
+                I have participated in many competitions on behalf of my school and college
+                during these three years.
+              </span>
+            </p>
+          </li>
+
+          <li class="tl-img">
+            <img class="image-14" src="../images/experiment/img-14.jpg">
+          </li>
+          <img id="continue" src="../images/experiment/continue.png">
+        </ul>
+      </section>
+      <!-- end of experiment-section -->
+
     </div>
-  </footer>
+    <!-- end of content -->
+
+    <!-- 页尾区footer -->
+    <footer class="footer">
+      <div class="copyright">
+        <span>❤</span>
+        Sweet Candy - Web Design By Wang,
+        <br>
+        © 2020 All Rights Reserved.
+      </div>
+    </footer>
+    <!-- end of footer -->
   </div>
-  <!-- 页尾footer结束 -->
+  <!-- end of experiment -->
 </body>
 
 </html>

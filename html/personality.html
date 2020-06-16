@@ -1,8 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>彩虹糖果小站——风采特辑</title>
 
   <!-- 多个css样式表混合重用，使网页布局整体协调一致 -->
@@ -14,9 +15,10 @@
 </head>
 
 <body>
-  <!-- 页眉header开始 -->
+  <!-- 页眉区header -->
   <header>
     <section class="header-section">
+      <!-- 每个页面的页眉区header都有一个公共类header-section用来放置内容，宽度固定，内容居中 -->
       <div class="logo_1">
         <img src="../images/common/logo.jpg">
       </div>
@@ -32,14 +34,16 @@
       </div>
     </section>
   </header>
-  <!-- 页眉header结束 -->
+  <!-- end of header -->
 
-  <!-- 导航栏nav开始 -->
+  <!-- 导航栏nav -->
   <nav class="naver clearfix">
+    <!-- 每个页面的导航栏都有一个公共类naver-section用来放置内容，宽度固定，内容居中 -->
     <section class="naver-section">
+      <!-- 导航栏共分为六个部分：index、introduction、experiment、personality、award、feedback -->
       <ul>
         <li class="">
-          <a href="../html/index.html" title="我的主页">我的主页</a>
+          <a href="../index.html" title="我的主页">我的主页</a>
         </li>
         <li class="">
           <a href="../html/introduction.html" title="个人简历">个人简历</a>
@@ -60,12 +64,19 @@
       <div class="searchIcon"></div>
     </section>
   </nav>
-  <!-- 导航栏nav结束 -->
+  <!-- end of nav -->
 
-  <!-- 风采特辑内容部分开始 -->
+  <!-- 风采特辑personality -->
+  <!-- personality页面布局特点：表格布局 -->
   <div id="personality">
+
+    <!-- 表格分成四个区域（两行两列）：两个videos和两个边栏aside-show，表格的每一行都放在一个公共类row中 -->
     <div class="row">
+      <!-- 表格的每一行分成两列，分别放在公共类videos和公共类aside-show中 -->
+
+      <!-- section.videos列的内容包括h5.header、video-title、video和video-description四个部分 -->
       <section class="videos">
+        <!-- 每一标题都被放在公共类h5.header中 -->
         <h5 class="header">我的视频</h5>
         <p class="video-title">2019年足尖上的青春校园舞蹈大赛</p>
         <!-- onfocus方法去掉视频的默认蓝色边框 -->
@@ -82,9 +93,13 @@
           非常高兴自己可以代表学院参加舞蹈大赛，从招人到排练我都参与其中虽然很辛苦但是回忆下来也是收获满满，以后可能没有机会再代表学院参加舞蹈大赛了，这将成为我永远的珍贵的记忆。
         </p>
       </section>
+      <!-- end of videos -->
+
+      <!-- aside-show列的内容包括h5.header、tab、photo-list三个部分 -->
       <aside class="aside-show">
+        <!-- 每一标题都被放在公共类h5.header中 -->
         <h5 class="header">照片墙</h5>
-        <div class="tab_buttons">
+        <div class="tab">
           <ul>
             <li class="current">日常&nbsp;&nbsp; /</li>
             <li class="">舞台&nbsp; /</li>
@@ -92,9 +107,11 @@
             <li class="">艺术照&nbsp; /</li>
           </ul>
         </div>
+        <!-- 将照片用一个无序列表ul容器盛放 -->
         <ul class="photo-list clearfix">
           <li>
             <div class="photo-bg">
+              <!-- 每一张图片都会用一个公共类image-container放置 -->
               <div class="image-container">
                 <img src="../images/personality/daily.jpg" title="生活" alt="daily">
               </div>
@@ -135,20 +152,13 @@
               </div>
             </div>
           </li>
-          <!-- <li>
-            <div>
-              <div class="image-container"> <img src="images/web-design-portfolio/mrflavour.jpg" title="Mr Flavour"
-                  alt="web design Wigan">
-                <div class="hover-bg"></div>
-                <div class="hover-links"> <a target="_blank" href="https://mrflavour.co.uk/" class="see"><i></i></a>
-                </div>
-              </div>
-            </div>
-          </li> -->
         </ul>
       </aside>
+      <!-- end of aside-show -->
     </div>
+
     <div class="row">
+      <!-- section.videos列的内容包括video-title、video和video-description三部分 -->
       <section class="videos">
         <p class="video-title next">2019年六月团学总结大会</p>
         <video controls class="video second" poster="../images/personality/my-video-poster.jpg" onfocus="this.blur()">
@@ -164,11 +174,17 @@
           工程文艺部，优秀！最棒！完美！
         </p>
       </section>
+      <!-- end of videos -->
+
+      <!-- aside-show列的内容包括h5.header、works-head和moreworks三个部分 -->
       <aside class="aside-show">
+        <!-- 每一标题都被放在公共类h5.header中 -->
         <h5 class="header">推文集</h5>
         <div class="works-head">
+          <!-- 将大推文放在一个无序列表ul中进行封面展示 -->
           <ul class="works-cover">
             <li>
+              <!-- 所有的推文图片都用公共类cover包住 -->
               <i class="cover">
                 <a href="https://mp.weixin.qq.com/s/DMYHCJpHy_rAOUyBc1hgGQ" title="团学 | 工程文艺离完美只差一个你">
                   <img src="../images/index/article-2.jpg">
@@ -178,10 +194,13 @@
               <span>这是第一篇自己独立完成的推文，为了学生会的部门招新，感觉自己超nice ~</span>
               <a href="https://mp.weixin.qq.com/s/DMYHCJpHy_rAOUyBc1hgGQ" class="readmore" title="推文阅读">推文阅读</a>
             </li>
+
             <li>
+              <!-- 将大推文放在一个无序列表ul中进行封面展示 -->
               <i class="cover">
                 <a href="https://mp.weixin.qq.com/s/fQEJ34CE0HROwRMR9TXQ1A" title="舞蹈大赛招人 | 工程舞蹈团和你有场约会">
-                  <img src="../images/personality/cover.jpg"></a>
+                  <img src="../images/personality/cover.jpg">
+                </a>
               </i>
               <b>工程舞蹈团和你有场约会</b>
               <span>第一次接触推送时编辑的推文，是和大家共同完成哒，成就感满满！</span>
@@ -189,10 +208,14 @@
             </li>
           </ul>
         </div>
+        <!-- end of works-head -->
+
         <div class="moreworks">
           <div id="works_list">
+            <!-- 将小推文列表放在ul容器中 -->
             <ul>
               <li>
+                <!-- 将推文的发布日期放在公共类date里，宽度固定，向左浮动布局 -->
                 <div class="date">
                   <div class="date-y">
                     2018
@@ -223,10 +246,15 @@
             </ul>
           </div>
         </div>
+        <!-- end of moreworks -->
       </aside>
+      <!-- end of aside-show -->
     </div>
+
   </div>
-  <!-- 页尾footer开始 -->
+  <!-- end of personality -->
+
+  <!-- 页尾区footer -->
   <footer class="footer">
     <div class="copyright">
       <span>❤</span>
@@ -235,7 +263,7 @@
       © 2020 All Rights Reserved.
     </div>
   </footer>
-  <!-- 页尾footer结束 -->
+  <!-- end of footer -->
 </body>
 
 </html>
