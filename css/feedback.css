@@ -1,0 +1,238 @@
+/* default css */
+form, input, select, option, textarea, h1 {
+  margin: 0;
+  padding: 0;
+}
+/* setting css */
+#feedback {
+  width: 100%;
+  margin: 0 auto;
+}
+.content_top-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+.content-header .title {
+  background: url(../images/feedback/formIcon.jpg) no-repeat 0 center;
+  background-size: 120px 150px;
+  color: #fff;
+  height: 60px;
+  margin-top: 10px;
+  line-height: 24px;
+  text-align: center;
+}
+header .title h2 {
+  background-color: #a32727;
+  width: 236px;
+  padding: 0 10px;
+  margin-top: 0;
+  margin-left: 105px;
+  font: normal 22px "Microsoft Yahei";
+  text-shadow: 0 1px 1px #000
+}
+header .foreword {
+  width: 480px;
+  padding: 10px;
+  margin-top: -36px;
+  margin-left: 95px;
+  text-align: left;
+}
+.foreword span.text {
+  line-height: 22px;
+  color: #fdf0db;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* 将表单的展示形式设置成表格 */
+form#survey {
+  display: table;
+  width: 800px;
+  height: 480px;
+  margin: 10px auto;
+  border: 1px dotted #fdf0db;
+}
+/* 用before伪类设置表单背景图片的透明度 */
+form#survey:before{
+  background: url(../images/feedback/survey-section-bg.jpg) no-repeat center;
+  width: 800px;
+  height: 480px;
+  content: "";
+  position: absolute;
+  /*-1 可以当背景*/
+  z-index: -1;
+  /* 设置透明程度 */
+  opacity: 0.6;
+}
+/* 将类tableRow展示形式设置成表格行 */
+.tableRow {
+  display: table-row;
+  overflow: hidden;
+}
+/* 将p标签展示形式设置成表格列 */
+.tableRow p {
+  display: table-cell;
+  color: #fff;
+  padding: 5px;
+  vertical-align: top;
+}
+.tableRow p span {
+  color: #ff0000;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* 单独设置奇数列的css样式 */
+.tableRow p:nth-child(odd) {
+  font: 800 16px 'Times New Roman', Times, serif;
+  text-align: right;
+}
+p.row-title {
+  background: url(../images/feedback/surveyIcon.jpg) no-repeat -20px -6px;
+  background-color: #e7e2da85;
+  color: #f7e07a;
+  vertical-align: middle;
+  /* !important 使font-size、text-align优先于p:nth-child(odd)中设置的属性 */
+  font-size: 20px !important;
+  text-align: center !important;
+}
+form input {
+  width: 200px;
+  height: 25px;
+}
+form input.choice {
+  width: 30px;
+  height: 15px;
+}
+form select {
+  width: 150px;
+  height: 25px;
+}
+form textarea {
+  width: 240px;
+  height: 150px;
+}
+.buttons {
+  text-align: center;
+}
+input.reset_btn, input.submit_btn, input.say_btn {
+  width: 70px;
+  height: 35px;
+  font: bold 16px "Microsoft YaHei";
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+input.reset_btn {
+  background-color: #a32727;
+  color: #fff;
+  border: 1px solid #721919;
+}
+input.submit_btn {
+  background-color: #d7ebf9;
+  color: #0070a3;
+  border: 1px solid #aed0ea;
+}
+input.reset_btn:hover, input.submit_btn:hover, input.say_btn:hover {
+  opacity: 0.85;
+}
+.star-3 {
+  position: absolute;
+  background: url(../images/feedback/star-split.jpg) repeat-x;
+  width: 930px;
+  height: 80px;
+  right: 160px;
+  top: 780px;
+}
+
+.content_bottom-inner {
+  width: 960px;
+  height: 450px;
+  margin: 70px auto 0 auto;
+}
+header .title .contact {
+  width: 265px;
+}
+header .word {
+  width: 660px;
+  height: 35px;
+  margin-left: 130px;
+  color: #fdf0db;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+}
+form#message {
+  display: table;
+  background-color: #d3d3d370;
+  width: 660px;
+  height: 150px;
+  margin-left: 130px;
+  border-spacing: 10px;
+}
+#message img {
+  width: 70px;
+  height: 70px;
+}
+#message textarea.write {
+  width: 450px;
+  height: 160px;
+}
+p.say {
+  text-align: right;
+}
+input.say_btn {
+  width: 80px;
+  background-color: #a52a2a;
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid #972727;
+}
+.subheader {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact-buttons {
+  margin-top: 14px;
+  text-align: center;
+}
+.contact-buttons .facebook {
+  background-position: 0 0;
+}
+.contact-buttons .twitter {
+  background-position: -74px 0;
+}
+.contact-buttons .ello {
+  background-position: -220px 0;
+}
+.contact-buttons .google {
+  background-position: -147px 0;
+}
+.contact-buttons .pinterest {
+  background-position: -293px 0;
+}
+.contact-buttons a {
+  background: url(../images/feedback/contactIcon.png) no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  width: 67px;
+  height: 67px;
+  margin: 0 4px;
+  transition: 0.4s;
+}
+
+.star-1, .star-2 {
+  position: absolute;
+  background: url(../images/feedback/star-aside.jpg) repeat-y;
+  width: 80px;
+  height: 1100px;
+  top: 185px;
+}
+.star-1 {
+  left: 85px;
+}
+.star-2 {
+  right: 85px;
+}

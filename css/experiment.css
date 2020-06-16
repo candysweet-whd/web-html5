@@ -1,0 +1,109 @@
+/* default css */
+* {
+  box-sizing: border-box;
+}
+/* setting css */
+h5.header {
+  margin-top: 15px;
+}
+ul {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+ul.tl {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 0 25px 0;
+  /* 使用弹性盒子容器：将元素排列在每一行上 */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.tl li {
+  display: list-item;
+  padding: 35px 0;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: auto;
+  border-bottom: 2px solid #d8dac9;
+}
+.tl-img {
+  background: url(../images/experiment/split.svg) no-repeat center bottom/4px;
+  width: 100%;
+  max-width: 120px;
+  padding: 0 5px;
+  vertical-align: top;
+  text-align: center;
+}
+.tl-img img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2px;
+}
+.tl-img img.image-1 {
+  height: 125px;
+  /* 给图片设计圆形边框 */
+  border-radius: 50%;
+}
+ul li.description {
+  max-width: 172px;
+  /* 处理padding内边距：可以使背景样式同步拓展 */
+  padding: 0 15px 30px 15px;
+}
+.description p.text {
+  background-color: #f7f7c7e1;
+  padding: 0 5px;
+  font-size: 14px;
+  border-radius: 10%;
+}
+.description p.text span {
+  padding: 2px 0;
+  border-bottom: 1px ridge #e1e6bc;
+  line-height: 1.2em;
+}
+p.text span.time {
+  background: #ebebd2 url(../images/experiment/time-bg.jpg);
+  width: 85px;
+  padding: 2px 6px;
+  margin: 0 auto;
+  /* 绝对定位：设计时间轴 */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  color: #767a4199;
+  font: 600 0.9em "pt-sans",sans-serif;
+  border: 2px solid #caccbe;
+  text-align: center;
+}
+.tl-img img.image-4 {
+  height: 122px;
+  border-radius: 50%;
+  border: 1px dotted #f6ffc5e1;
+}
+.tl-img img.image-7 {
+  height: 115px;
+  border-radius: 50%;
+  border: 1px ridge #1947aab4;
+}
+.tl-img img.image-9 {
+  height: 120px;
+  border-radius: 50%;
+  border: 1px ridge #1947aab4;
+}
+.tl-img img.image-12, .tl-img img.image-14{
+  height: 95px;
+}
+.tl-img img.image-13 {
+  width: 125px;
+  height: 128px;
+  border-radius: 50%;
+  border: 1px dotted #f6ffc5e1;
+}
+img#continue {
+  position: absolute;
+  right: 42px;
+  top: 960px;
+}

@@ -1,0 +1,137 @@
+/* default css */
+table, tbody, th, td {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+#introduction {
+  width: 100%;
+  margin: 0 auto;
+}
+.cont {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+.cont .title {
+  height: 32px;
+  font-size: 24px;
+  text-shadow: -3px 3px 3px #ebcb90;
+}
+.cont span.star {
+  display: inline-block;
+  background: url(../images/introduction/title-star.png) no-repeat;
+  width: 40px;
+  height: 35px;
+  margin: -10px 20px 0 20px;
+  vertical-align: middle;
+}
+aside#code {
+  /* fixed固定二维码位置，使其一直在页面中显示 */
+  position: fixed;
+  background-color: #aacbe4a2;
+  top: 176px;
+  right: 8px;
+  /* 设置z-index 使二维码不被遮挡，始终在边栏装饰的上方展示 */
+  z-index: 9;
+}
+#code p {
+  margin: 5px auto 10px auto;
+  font-size: 20px;
+  color: #bb3232;
+  text-shadow: 0 1px 1px #000;
+}
+#code img {
+  height: 100%;
+  max-height: 110px;
+  padding: 0 5px 10px 5px;
+  float: right;
+}
+
+.information {
+  width: 777px;
+  margin: 0 auto;
+  color: #000;
+  word-wrap: break-word;
+  text-align: center;
+}
+.information .inner {
+  position: relative;
+  background-color: #fffafae5;
+  margin-bottom: 28px;
+  padding: 10px;
+  /* 设置边框样式，脊线更加立体 */
+  border: 3px ridge #cab9b9e5;
+}
+/* 设置奇数列css */
+td:nth-child(odd) {
+  background-color: #ecf5fc;
+  height: 32px;
+  padding: 5px;
+  line-height: 24px;
+  border: 1px solid #c9c8c8;
+}
+/* 设置偶数列css */
+td:nth-child(even) {
+  background-color: #fff;
+  width: 140px;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid #c9c8c8;
+}
+td.photo {
+  background: url(../images/introduction/basic-information-photo.png) no-repeat center 0;
+  background-size: 75px auto;
+  background-color: #fff;
+  height: 80px;
+}
+
+aside img.decorate {
+  position: absolute;
+}
+img.decorate.fighting {
+  top: 160px;
+  left: 20px;
+}
+img.decorate.rocket {
+  top: 920px;
+  left: 10px;
+}
+aside img.decorate.kids{
+  bottom: -230px;
+  right: 30px;
+}
+.information.detailed td {
+  width: 795px;
+  padding: 1px;
+  font-weight: bold;
+  font-size: 14px;
+}
+td.answer {
+  background-color: #fff;
+}
+.answer p {
+  padding: 10px 15px;
+  font-weight: normal;
+  text-align: left;
+}
+.answer p.description {
+  text-indent: 2em;
+}
+
+aside#phone {
+  position: fixed;
+  background-color: #aacbe4a2;
+  bottom: 5px;
+  left: 8px;
+  z-index: 9;
+}
+#phone p {
+  margin: 5px;
+  color: #f0e1a8;
+  font-size: 16px;
+}

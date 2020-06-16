@@ -1,0 +1,88 @@
+/* default css */
+table, th, td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-spacing: 0;
+}
+/* setting css */
+#award {
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  margin-top: 10px;
+}
+.rocket {
+  /* 使用绝对定位，使火箭能够固定在页面上 */
+  position: absolute;
+  background: url(../images/award/rocket.png) no-repeat;
+  width: 270px;
+  height: 160px;
+  top: 185px;
+  left: 0;
+}
+.award-section {
+  width: 860px;
+  min-height: 500px;
+  line-height: 2em;
+  margin: -10px auto 10px auto;
+  overflow: hidden;
+}
+.award-table {
+  width: 100%;
+  background-color: #818df780;
+  text-align: center;
+  vertical-align: top;
+}
+.award-table .title {
+  background-color: #c9ccfa80;
+  height: 26px;
+  border: 1px solid #c5d9f583;
+  padding: 2px 10px;
+}
+.award-table .title span {
+  color: #a82929;
+  font-size: 17px;
+  font-weight: bold;
+  text-shadow: 0 1px 1px #333;
+}
+.award-table .column {
+  color: #ffefd5;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid #c5d9f583;
+  border-width: 0 1px 1px 1px;
+  text-shadow: 0px 1px 0px #ffffff1a, inset 0px 1px 1px #000000b3;
+}
+/* 设置表格每一行通用的css样式 */
+.specific {
+  width: 33%;
+  height: 22px;
+  color: #fff;
+  font-size: 13px;
+  border: solid #c5d9f583;
+  border-width: 0 1px;
+  padding: 2px 10px;
+}
+.explode-left {
+  position: absolute;
+  background: url(../images/award/explode.jpg) no-repeat;
+  width: 125px;
+  height: 136px;
+  top: 780px;
+  left: 10px;
+}
+.explode-left.another {
+  top: 720px;
+  left: 75px;
+}
+.astronaut-right {
+  position: absolute;
+  background: url(../images/award/astronaut.jpg) no-repeat;
+  width: 240px;
+  height: 265px;
+  bottom: -50px;
+  right: 10px;
+}

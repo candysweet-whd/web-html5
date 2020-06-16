@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>彩虹糖果小站——反馈建议</title>
+
+  <!-- 多个css样式表混合重用，使网页布局整体协调一致 -->
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <!-- feedback.css样式表优先，覆盖index.css样式表中样式 -->
+  <link rel="stylesheet" type="text/css" href="../css/feedback.css">
+
+  <link rel="icon" href="../images/common/symbol.ico">
+</head>
+
+<body>
+  <!-- 反馈建议网页布局：凝胶布局 -->
+  <div id="feedback">
+    <!-- 页眉header开始 -->
+    <header>
+      <section class="header-section">
+        <div class="logo_1">
+          <img src="../images/common/logo.jpg">
+        </div>
+        <div class="logo_2">
+          <img src="../images/common/logo.jpg">
+        </div>
+        <div class="logo_1">
+          <img src="../images/common/logo.jpg">
+        </div>
+        <h4 class="welcome">Welcome to the world of Candy 带你从这里认识我</h4>
+        <div class="picture">
+          <img src="../images/common/header.jpg">
+        </div>
+      </section>
+    </header>
+    <!-- 页眉header结束 -->
+
+    <!-- 导航栏nav开始 -->
+    <nav class="naver clearfix">
+      <section class="naver-section">
+        <ul>
+          <li class="">
+            <a href="../html/index.html" title="我的主页">我的主页</a>
+          </li>
+          <li class="">
+            <a href="../html/introduction.html" title="个人简历">个人简历</a>
+          </li>
+          <li class="">
+            <a href="../html/experiment.html" title="成长经历">成长经历</a>
+          </li>
+          <li class="">
+            <a href="../html/personality.html" title="风采特辑">风采特辑</a>
+          </li>
+          <li class="">
+            <a href="../html/award.html" title="荣誉展示">荣誉展示</a>
+          </li>
+          <li class="current">
+            <a href="../html/feedback.html" title="反馈建议">反馈建议</a>
+          </li>
+        </ul>
+        <div class="searchIcon"></div>
+      </section>
+    </nav>
+    <!-- 导航栏nav结束 -->
+
+    <!-- 反馈建议内容部分开始 -->
+    <div class="content">
+      <section class="content_top-section">
+        <div class="content_top-inner">
+          <header class="content-header">
+            <div class="title">
+              <h2>PART ONE --- SURVEY</h2>
+            </div>
+            <div class="foreword">
+              <span class="text">
+                <p>大家好！欢迎光临我的彩虹糖果小站，为了更好完善网页，希望您能为我留下宝贵意见</p>
+                <p>下面可能耽误您几分钟搜集信息，衷心感谢您的配合 ~</p>
+              </span>
+            </div>
+          </header>
+          <!-- 反馈建议采用提交表单form形式设计 -->
+          <form id="survey" name="survey" action="feedback.php" method="post">
+            <!-- 将表单内容放在自定义的表格中：表格布局 -->
+            <div class="tableRow">
+              <p class="row-title">基本信息</p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+            <br>
+            <div class="tableRow">
+              <p>Your Name<span>*</span>:</p>
+              <p>
+                <input type="text" class="text-field" data-type="input-textbox" name="name" placeholder="请输入您的姓名*">
+              </p>
+              <p>choice: </p>
+              <p>
+                <input class="choice" type="radio" name="choice" value="male">男（M）
+                <input class="choice" type="radio" name="choice" value="female">女（F）
+              </p>
+            </div>
+            <div class="tableRow">
+            </div>
+            <div class="tableRow">
+              <p>Q Q：</p>
+              <p>
+                <input class="text-field" type="text" data-type="input-textbox" name="emailconfirm"
+                  placeholder=" 请填写您的QQ">
+              </p>
+              <p>Wechat：</p>
+              <p>
+                <input class="text-field" type="text" data-type="input-textbox" name="emailconfirm"
+                  placeholder=" 请填写您的微信号">
+              </p>
+            </div>
+            <div class="tableRow">
+              <p>Telephone Number:</p>
+              <p>
+                <input class="text-field" type="text" data-type="input-textbox" name="phone" placeholder=" 请输入您的电话号码">
+              </p>
+              <p>Email Address<span>*</span>:</p>
+              <p>
+                <input class="text-field" type="text" data-type="input-textbox" name="email" placeholder=" 请填写邮箱地址*">
+              </p>
+            </div>
+            <div class="tableRow">
+              <p class="row-title">网站反馈</p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+            <br>
+            <div class="tableRow">
+              <p>哪个页面最新颖？</p>
+              <p>
+                <select name="web">
+                  <option value="index">我的主页</option>
+                  <option value="introduction">个人简历</option>
+                  <option value="experiment">成长经历</option>
+                  <option value="personality">风采特辑</option>
+                  <option value="award">荣誉展示</option>
+                </select>
+              </p>
+              <p></p>
+              <p></p>
+            </div>
+            <div class="tableRow">
+              <p>哪些页面需要改进？</p>
+              <p>
+                <input class="choice" type="checkbox" name="choice[]" value="index">我的主页
+                <br><br>
+                <input class="choice" type="checkbox" name="choice[]" value="introduction">个人简历
+                <br><br>
+                <input class="choice" type="checkbox" name="choice[]" value="experiment">成长经历
+                <br><br>
+                <input class="choice" type="checkbox" name="choice[]" value="personality">风采特辑
+                <br><br>
+                <input class="choice" type="checkbox" name="choice[]" value="award">荣誉展示
+              </p>
+              <p>页面建议或意见<span>*</span></p>
+              <p>
+                <textarea class="text-field form-textarea" name="suggestion"></textarea>
+              </p>
+            </div>
+            <br>
+            <div class="tableRow">
+              <p></p>
+              <p class="buttons">
+                <input class="reset_btn" type="reset" name="reset_btn" value="重 置">
+              </p>
+              <p class="buttons">
+                <input class="submit_btn" type="submit" name="submit_btn" value="提 交">
+              </p>
+              <p></p>
+            </div>
+          </form>
+        </div>
+        <aside class="star-3"></aside>
+      </section>
+
+      <section class="content_bottom">
+        <div class="content_bottom-inner">
+          <header class="content-header">
+            <div class="title">
+              <h2 class="contact">PART TWO --- CONTACT</h2>
+              <div class="word">
+                <h1>留言区</h1>
+              </div>
+            </div>
+          </header>
+          <form id="message" name="message" action="feedback.php" method="post">
+            <div class="tableRow">
+              <p>
+                <img src="../images/feedback/messageIcon.jpg">
+              </p>
+              <p>
+                <textarea class="write" name="message" placeholder=" 简单说上两句......"></textarea>
+              </p>
+            </div>
+            <div class="tableRow">
+              <p></p>
+              <p class="say">
+                <input class="say_btn" type="submit" name="say_btn" value="畅言一下">
+              </p>
+            </div>
+          </form>
+          <div class="subheader">STAY IN TOUCH</div>
+          <div class="contact-buttons">
+            <a class="facebook" href="#" title="Facebook"></a>
+            <a class="twitter" href="#" title="Twitter"></a>
+            <a class="ello" href="#" title="Ello"></a>
+            <a class="google" href="#" title="Google Plus"></a>
+            <a class="pinterest" href="#" title="YouTube"></a>
+          </div>
+      </section>
+    </div>
+    <aside class="star-1"></aside>
+    <aside class="star-2"></aside>
+    <!-- 反馈建议内容部分结束 -->
+
+    <!-- 页尾footer开始 -->
+    <footer class="footer">
+      <div class="copyright">
+        <span>❤</span>
+        Sweet Candy - Web Design By Wang,
+        <br>
+        © 2020 All Rights Reserved.
+      </div>
+    </footer>
+    <!-- 页尾footer结束 -->
+  </div>
+</body>
+
+</html>
