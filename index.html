@@ -13,8 +13,9 @@
 </head>
 
 <body>
-  <!-- 主页布局特点：凝胶布局 -->
+  <!-- 主页布局特点：凝胶布局，宽度固定内容居中，左右margin自动调节 -->
   <div id="index">
+
     <!-- 页眉区header -->
     <header>
       <!-- 每个页面的页眉区header都有一个公共类header-section用来放置内容，宽度固定，内容居中 -->
@@ -37,7 +38,7 @@
     <!-- end of header -->
 
     <!-- 导航栏nav -->
-    <nav class="naver clearfix">
+    <nav class="naver">
       <!-- 每个页面的导航栏都有一个公共类naver-section用来放置内容，宽度固定，内容居中 -->
       <section class="naver-section">
         <!-- 导航栏共分为六个部分：index、introduction、experiment、personality、award、feedback -->
@@ -74,6 +75,7 @@
       <section class="content_left">
         <!-- 1号区域content_left又被划分为两个部分：brief和prize -->
         <div class="brief">
+          <!-- brief内部分成 主要内容<a></a>、列表<ul></ul>、更多内容more_btn 三小块 -->
           <div class="more_btn" type="更多">
             <a href="html/introduction.html" textvalue="个人简历>>" title="个人简历">个人简历&gt;&gt;</a>
           </div>
@@ -110,6 +112,7 @@
         </div>
         <!-- end of brief -->
         <div class="prize">
+          <!-- prize内部由 一个标题h5+图片元素medal、无序列表prize_list、更多morebtn 构成 -->
           <div class="medal">
             <img src="images/index/exhibition.jpg">
             <h5>荣誉专栏</h5>
@@ -137,6 +140,7 @@
         <!-- end of prize -->
       </section>
       <!-- end of content_left -->
+
       <section class="content_right">
         <!-- 2号区域content_right也被划分为两个板块：article和essay -->
         <article class="article">
@@ -180,6 +184,7 @@
           </div>
         </article>
         <!-- end of article -->
+
         <div class="essay">
           <h5 class="header">我的推文</h5>
           <!-- essay被分为两个部分：左侧边栏区essay_left和右侧essay_right -->
@@ -253,6 +258,7 @@
       </div>
     </footer>
     <!-- end of footer -->
+
   </div>
   <!-- end of index -->
 </body>

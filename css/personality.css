@@ -2,11 +2,13 @@
 a:hover {
   color: #f5deb3;
 }
+
 /* setting css */
 div#personality {
-  /* 为整个页面设置表格布局 */
+  /* 为整个页面设置自定义表格：表格布局 */
   display: table;
   width: 1100px;
+  /* 设置表格上下左右的边距 */
   border-spacing: 20px;
   margin: 25px auto 0 auto;
 }
@@ -22,9 +24,11 @@ section.videos {
   vertical-align: top;
 }
 p.video-title {
+  /* 标题内容居中，自动调节左右margin距离 */
   margin: -10px auto 10px auto;
   color: #dbe1f3;
   font: bold 18px "Microsoft YaHei";
+  /* 标题文字居中 */
   text-align: center; 
   text-shadow: 0 1px 1px #172447;
 }
@@ -37,6 +41,7 @@ p.video-description {
   color: #e4e3e3;
   font-size: 12px;
   line-height: 24px;
+  /* 设置2字符的缩进 */
   text-indent: 2em;
 }
 p.second {
@@ -45,6 +50,7 @@ p.second {
 aside.aside-show {
   display: table-cell;
   background-color: #fad2b1a2;
+  /* 用百分比分配左右两列单元格的宽度，根据总宽度自动调节 */
   width: 35%;
   border-radius: 5px;
   text-align: center;
@@ -65,11 +71,13 @@ video.video {
   width: 403px;
   height: 228px;
   margin: 5px 10px 0 0;
+  /* 将视频右浮动布局 */
   float: right;
 }
 video.second {
   height: 226px;
   margin-left: 10px;
+  /* 将第二个视频左浮动布局 */
   float: left;
 }
 .tab {
@@ -88,11 +96,11 @@ video.second {
 }
 .photo-list {
   margin-top: 10px;
-  padding: 5px 0 0;
+  padding: 10px 0;
 }
 .photo-list li {
-  float: left;
   width: 95px;
+  float: left;
   margin-left: 23px;
   margin-bottom: 23px;
 }
@@ -109,7 +117,6 @@ video.second {
   height: 100%;
   margin-left: -22px;
 }
-
 .works-head {
   background: #c5a3a3fd;
   width: 340px;
@@ -123,19 +130,11 @@ video.second {
   position: relative;
   overflow: hidden;
 }
-.works-cover ul:before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  left: 10px;
-}
 .works-cover li {
   float: left;
   width: 35%;
   border: #a58888fd 1px solid;
   padding: 22px;
-  transition: all 0.5s ease;
 }
 i.cover {
   display: block;
@@ -150,10 +149,10 @@ i.cover {
   width: 100%;
   height: 100%;
   vertical-align: middle;
+  /* 设置图片滑入动画css */
   transition: all 0.5s ease-out 0.1s;
 }
 .works-cover li b {
-  display: block;
   width: 100%;
   height: 40px;
   color: #ffefd5;
@@ -163,6 +162,7 @@ i.cover {
   overflow: hidden;
 }
 .works-cover li span {
+  /* 将span设置成块元素，前后自动空行 */
   display: block;
   font-size: 12px;
   height: 55px;
@@ -175,11 +175,11 @@ i.cover {
   font-size: 12px;
   font-weight: 500;
 }
+/* 伪类before在推文阅读按钮前设置一定样式 */
 .readmore:before {
   content: " + ";
   color: #ffefd5;
 }
-
 #works_list ul {
   margin-top: -10px;
 }
@@ -191,16 +191,18 @@ i.cover {
 ul .date {
   width: 40px;
   height: 26px;
+  /* 日期元素设置成左浮动，使日期右边部分可以增加推文标题 */
   float: left;
   margin-left: 13px;
   font: normal 12px "Microsoft YaHei";
+  /* 日期内容文字居中 */
   text-align: center;
 }
 .date .date-y {
+  background-color: #ec5f4c;
+  color: #fff;
   height: 15px;
   line-height: 15px;
-  color: #fff;
-  background-color: #ec5f4c;
 }
 .date .date-m-d {
   height: 12px;
@@ -210,9 +212,9 @@ ul .date {
   border-top: 1px solid #f1d9c3;
 }
 #works_list li .title {
+  margin-left: 6px;
   width: 270px;
   float: left;
-  margin-left: 6px;
   text-align: left;
 }
 #works_list li .title a {

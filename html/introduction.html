@@ -17,6 +17,7 @@
 <body>
   <!-- 个人简介布局特点：凝胶布局+表格布局 -->
   <div id="introduction">
+
     <!-- 页眉区header -->
     <header>
       <!-- 每个页面的页眉区header都有一个公共类header-section用来放置内容，宽度固定，内容居中 -->
@@ -39,7 +40,7 @@
     <!-- end of header -->
 
     <!-- 导航栏nav -->
-    <nav class="naver clearfix">
+    <nav class="naver">
       <!-- 每个页面的导航栏都有一个公共类naver-section用来放置内容，宽度固定，内容居中 -->
       <section class="naver-section">
         <!-- 导航栏共分为六个部分：index、introduction、experiment、personality、award、feedback -->
@@ -96,7 +97,10 @@
             <table>
               <!-- information basic的内容用表格table展示: 局部表格布局 -->
               <tbody>
+                <!-- 表格的每一行用一个<tr></tr>容器包住 -->
                 <tr>
+                  <!-- 一行被分成六列，每一列都用一个<td></td>容器包住 -->
+                  <!-- 两列可看成一个部分，包括小标题+回答 -->
                   <td>
                     姓&nbsp;&nbsp;名
                   </td>
@@ -327,7 +331,7 @@
       </section>
       <!-- end of cont second -->
 
-      <!-- 固定在页面上的联系方式都用一个aside边栏容器放置 -->
+      <!-- 固定在页面上的联系方式都用aside边栏容器放置 -->
       <aside id="code">
         <p>扫码联系我</p>
         <img src="../images/index/wechat.jpg" title="wechat 微信">
@@ -351,6 +355,7 @@
       </div>
     </footer>
     <!-- end of footer -->
+
   </div>
   <!-- end of introduction -->
 </body>

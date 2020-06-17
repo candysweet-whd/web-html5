@@ -1,15 +1,19 @@
 /* default css */
+/* 使用box-sizing属性将border、padding和margin都包含在设定的宽度及高度中，节省空间，能够在有限空间内显示更多内容 */
 * {
   box-sizing: border-box;
 }
 ul {
   list-style-type: none;
 }
+
 /* setting css */
+/* 凝胶布局：设置网页内容居中，自动调节margin */
 #experiment {
   width: 100%;
   margin: 0 auto;
 }
+/* 将experiment页面的header在index.css的基础上作改变：增加margin-top距离 */
 h5.header {
   margin-top: 15px;
 }
@@ -19,10 +23,12 @@ ul {
 }
 ul.tl {
   max-width: 1050px;
+  /* 列表内容居中显示 */
   margin: 0 auto;
   padding: 0 0 25px 0;
   /* 使用弹性盒子容器：将元素排列在每一行上 */
   display: flex;
+  /* 设置方向：横向行排列 */
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -33,6 +39,7 @@ ul.tl {
   position: relative;
   flex-grow: 1;
   flex-basis: auto;
+  /* 设置下边框即时间轴样式 */
   border-bottom: 2px solid #d8dac9;
 }
 .tl-img {
@@ -40,6 +47,7 @@ ul.tl {
   width: 100%;
   max-width: 120px;
   padding: 0 5px;
+  /* 在垂直方向上向上对齐 */
   vertical-align: top;
   text-align: center;
 }
@@ -74,12 +82,13 @@ p.text span.time {
   width: 85px;
   padding: 2px 6px;
   margin: 0 auto;
-  /* 绝对定位：设计时间轴 */
+  /* 绝对定位：设计时间轴上的时间样式 */
   position: absolute;
   left: 0;
   right: 0;
   bottom: -12px;
   color: #767a4199;
+  /* 给时间设置特殊的字体css */
   font: 600 0.9em "pt-sans",sans-serif;
   border: 2px solid #caccbe;
   text-align: center;
@@ -87,11 +96,13 @@ p.text span.time {
 .tl-img img.image-4 {
   height: 122px;
   border-radius: 50%;
+  /* 点状边框 */
   border: 1px dotted #f6ffc5e1;
 }
 .tl-img img.image-7 {
   height: 115px;
   border-radius: 50%;
+  /* 脊线边框 */
   border: 1px ridge #1947aab4;
 }
 .tl-img img.image-9 {
@@ -109,6 +120,7 @@ p.text span.time {
   border: 1px dotted #f6ffc5e1;
 }
 img#continue {
+  /* 位置设成绝对定位 */
   position: absolute;
   right: 42px;
   top: 960px;

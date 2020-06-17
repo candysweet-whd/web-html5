@@ -1,32 +1,28 @@
 /* default css */
+/* 初始化各容器的margin和padding边距为0 */
 body, div, header, nav, section, article, aside, footer, ul, ol, li, h2, h3, h4, h5, a, img, p, span {
   margin: 0; 
   padding: 0;
 }
+/* 初始化body内容部分的背景颜色、行高、文字大小和样式 */
 body {
   background-color: #202e7a80;
   line-height: 1;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* 初始化各列表前无样式 */
 ol, ul, li {
   list-style: none;
 }
+/* 初始化a标签文字颜色和无样式 */
 a {
   color: #555;
   text-decoration: none;
 }
+/* 将图片边框css设置为0 */
 img {
   border: 0;
-}
-/* 清除浮动 */
-.clearfix:before, .clearfix:after {
-  display: block;
-  width: 0;
-  height: 0;
-  line-height: 0;
-  content: '.';
-  overflow: hidden;
-  visibility: hidden;
 }
 
 /* setting css */
@@ -40,74 +36,81 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+/* 固定页眉区的高度，宽度占满整个页面 */
 header {
   width: 100%;
   height: 85px;
 }
+/* 页面区容器宽度固定，页眉内容居中 */
 section.header-section {
   width: 1200px;
   margin: 0 auto;
   overflow: hidden;
 }
-.logo_1 {
-  float: left;
-  width: 100px;
-  margin: 15px 0;
-}
+/* 固定页面去所有图片的宽度和高度 */
 header img {
   width: 100px;
   height: 90px;
 }
+/* 页眉区左侧图片向左浮动 */
+.logo_1 {
+  float: left;
+  margin: 15px 0;
+}
 .logo_2 {
   float: left;
-  width: 100px;
   margin: -5px 0;
 }
+/* 单独设置右侧图片的大小 */
+header .picture img {
+  width: 90px;
+  height: 70px;
+}
+/* 页眉区右侧图片右浮动布局 */
 .picture {
   float: right;
   margin-top: 15px;
   margin-right: 5px;
 }
-header .picture img {
-  width: 90px;
-  height: 70px;
-}
 .welcome {
-  float: right;
   width: 270px;
   margin: 20px 0;
+  /* 文字右浮动 */
+  float: right;
   color: #ffefd5;
   font-family: "Microsoft YaHei";
+  /* 文字样式设置斜体 */
   font-style: italic;
   line-height: 1.6em;
 }
 
+/* 导航栏css */
 .naver {
   background: url(../images/common/naver-bg.png) repeat-x 0 0;
   position: relative;
   height: 90px;
 }
+/* 固定导航栏容器宽度，使内容居中，左右margin自动调节 */
 .naver-section {
   position: relative;
   width: 1000px;
   margin: 0 auto;
 }
-.clearfix {
-  zoom: 1;
-}
 nav ul {
-  list-style: none;
   list-style-image: none;
 }
 .naver li {
   position: relative;
-  font-weight: bold;
-  font-size: 18px;
-  text-shadow: 0 1px 1px #000;
+  /* 浮动布局，使导航栏能够排布在一行上 */
   float: left;
   margin-left: 20px;
-  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  /* 给文字加上阴影，目的使文字更加显现 */
+  text-shadow: 0 1px 1px #000;
 }
+/* 用伪类after定义导航栏后的样式 */
 .naver li:after {
   content: ".";
   position: absolute;
@@ -118,10 +121,6 @@ nav ul {
   background: url(../images/common/split.png) no-repeat;
   right: -14px;
 }
-.naver li.current a, .naver li a:hover {
-  background: url(../images/common/naver-selected.png) no-repeat;
-  color: #a32727;
-}
 .naver li a {
   display: block;
   color: #fff;
@@ -129,6 +128,11 @@ nav ul {
   padding-bottom: 12px;
   line-height: 5em;
   text-align: center;
+}
+/* 当前选中页面的导航样式特殊化 */
+.naver li.current a, .naver li a:hover {
+  background: url(../images/common/naver-selected.png) no-repeat;
+  color: #a32727;
 }
 .searchIcon {
   background: url(../images/common/searchIcon.png) no-repeat;
@@ -138,6 +142,8 @@ nav ul {
   margin: 35px -70px;
 }
 
+/* 内容区css */
+/* 固定内容区容器的宽度和最小高度值，内容居中 */
 .content {
   width: 1100px;
   margin: 10px auto;
@@ -146,11 +152,14 @@ nav ul {
 }
 .content_left {
   width: 290px;
+  /* 左侧内容向左浮动 */
   float: left;
 }
 .brief {
   background-color: #ffffff80;
+  /* 对容器设置阴影样式 */
   box-shadow: 0px 1px 0px #ffffff1a, inset 0px 1px 1px lightslategray;
+  /* 使brief背景边框稍微圆滑 */
   border-radius: 5px;
   height: 260px;
   margin: 10px 0;
@@ -175,6 +184,7 @@ nav ul {
   margin-right: 10px;
   float: right;
 }
+/* 重新设置文字的大小、粗细和字体 */
 .content_left .more_btn a {
   color: #fdf0db;
   font-size: 12px;
@@ -184,7 +194,9 @@ nav ul {
 .brief p {
   color: #ebe7dd;
   font-size: 14px;
+  /* padding会拓展背景样式，而margin不会 */
   padding: 0 20px;
+  /* 重新定义行高 */
   line-height: 25px;
   text-shadow: 0px 2px 2px #ffffff1a;
 }
@@ -193,6 +205,7 @@ nav ul {
 }
 .linkmore li {
   position: relative;
+  /* 用百分比设置宽度，起到自动调节的作用 */
   width: 25%;
   float: left;
 }
@@ -201,6 +214,7 @@ nav ul {
   height: 53px;
   margin: 0 5px;
   box-shadow: 0px 1px 0px #ffffff1a, inset 0px 1px 1px #000000b3;
+  /* 边框设置成圆形 */
   border-radius: 50%;
 }
 a.iconfont.icon-zhuye {
@@ -267,7 +281,7 @@ a.iconfont.icon-weixin {
   font-family: SimSum;
   text-shadow: 0px 2px 2px #00000080;
 }
-
+/* 右侧内容设置右浮动 */
 .content_right {
   width: 800px;
   float: right;
@@ -302,14 +316,17 @@ article .article_right {
 }
 article .article_title {
   height: 30px;
+  /* 给标题article_title设定一个实线下边框 */
   border-bottom: 1px solid #e6e6e6;
 }
 article .article_title a {
   color: #ffefd5;
   font-size: 18px;
   line-height: 20px;
+  /* 文字字体加粗 */
   font-weight: bold;
 }
+/* 设置鼠标悬停在标题上时特殊的颜色样式 */
 .article_title a:hover {
   color: #ffd7a6;
 }
@@ -319,6 +336,7 @@ article .news {
   font: normal 13px "Microsoft YaHei";
   line-height: 24px;
   height: 120px;
+  /* 设定文字首行缩进2字符 */
   text-indent: 2em;
 }
 article .article-meta {
@@ -346,7 +364,9 @@ article .article-meta li.more a {
   padding: 10px 5px;
 }
 .article-meta li.more a:hover {
+  /* 鼠标悬停时透明度为0.75 */
   opacity: 0.75;
+  /* 给文字设置下划线 */
   text-decoration: underline;
 }
 .essay {
@@ -358,6 +378,7 @@ article .article-meta li.more a {
   height: 60px;
   color: #a32727;
   font: bold 28px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* 文字居中显示 */
   text-align: center;
   text-shadow: 0 1px 1px #333;
 }
@@ -420,6 +441,7 @@ article .article-meta li.more a {
   color: #ffefd5;
   float: right;
   right: 0;
+  /* 当margin-top为负值时可使容器超出上边界继续向上移动，但背景不延伸 */
   margin-top: -10px;
 }
 .essay_more a {
@@ -437,10 +459,11 @@ article .article-meta li.more a {
 }
 
 footer.footer {
-  /* 页尾清除所有浮动元素 */
+  /* 页尾区要清除上面的所有浮动元素 */
   clear: both;
   background-color: #161b3f80;
   height: 75px;
+  /* 文字居中显示 */
   text-align: center;
 }
 .copyright {
@@ -454,8 +477,10 @@ footer.footer {
   line-height: 1.2em;
 }
 .copyright span {
-  color: #c00;
+  /* 给页眉区的爱心颜色变成红色 */
+  color: #cc0000;
 }
+/* 清除浮动 */
 .copyright:after {
   clear: both;
   content: "";

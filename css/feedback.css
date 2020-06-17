@@ -1,19 +1,24 @@
 /* default css */
+/* 初始化各容器的margin和padding边距为0 */
 form, input, select, option, textarea, h1 {
   margin: 0;
   padding: 0;
 }
+
 /* setting css */
+/* 凝胶布局：设置网页内容居中，自动调节margin */
 #feedback {
   width: 100%;
   margin: 0 auto;
 }
+/* 给上部内容区容器设定固定的宽度，内容居中 */
 .content_top-inner {
   width: 960px;
   margin: 0 auto;
 }
 .content-header .title {
   background: url(../images/feedback/formIcon.jpg) no-repeat 0 center;
+  /* 图片大小过大，所以给背景图片设置固定的宽度和高度 */
   background-size: 120px 150px;
   color: #fff;
   height: 60px;
@@ -25,9 +30,9 @@ header .title h2 {
   background-color: #a32727;
   width: 236px;
   padding: 0 10px;
-  margin-top: 0;
   margin-left: 105px;
   font: normal 22px "Microsoft Yahei";
+  /* 给标题加上文字阴影 */
   text-shadow: 0 1px 1px #000
 }
 header .foreword {
@@ -35,17 +40,20 @@ header .foreword {
   padding: 10px;
   margin-top: -36px;
   margin-left: 95px;
+  /* 将文字居中重新设置成左对齐 */
   text-align: left;
 }
 .foreword span.text {
   line-height: 22px;
   color: #fdf0db;
   font-size: 12px;
+  /* 字体样式设置斜体文字 */
   font-style: italic;
 }
 
 /* 将表单的展示形式设置成表格 */
 form#survey {
+  /* survey的display属性设置成表格，宽度和高度固定，内容居中 */
   display: table;
   width: 800px;
   height: 480px;
@@ -54,6 +62,7 @@ form#survey {
 }
 /* 用before伪类设置表单背景图片的透明度 */
 form#survey:before{
+  /* 表单背景图片属性设置 */
   background: url(../images/feedback/survey-section-bg.jpg) no-repeat center;
   width: 800px;
   height: 480px;
@@ -64,16 +73,17 @@ form#survey:before{
   /* 设置透明程度 */
   opacity: 0.6;
 }
-/* 将类tableRow展示形式设置成表格行 */
 .tableRow {
+  /* 将类tableRow展示形式设置成表格行 */
   display: table-row;
   overflow: hidden;
 }
-/* 将p标签展示形式设置成表格列 */
 .tableRow p {
+  /* 将p标签展示形式设置成表格列 */
   display: table-cell;
   color: #fff;
   padding: 5px;
+  /* 在垂直方向中将内容设成向上对齐 */
   vertical-align: top;
 }
 .tableRow p span {
@@ -84,6 +94,7 @@ form#survey:before{
 /* 单独设置奇数列的css样式 */
 .tableRow p:nth-child(odd) {
   font: 800 16px 'Times New Roman', Times, serif;
+  /* 文字右对齐 */
   text-align: right;
 }
 p.row-title {
@@ -95,6 +106,8 @@ p.row-title {
   font-size: 20px !important;
   text-align: center !important;
 }
+
+/* 对form的input、select、textarea等设置固定的宽度和高度 */
 form input {
   width: 200px;
   height: 25px;
@@ -119,6 +132,7 @@ input.reset_btn, input.submit_btn, input.say_btn {
   height: 35px;
   font: bold 16px "Microsoft YaHei";
   border-radius: 8px;
+  /* 鼠标悬停时的样式设置：手势 */
   cursor: pointer;
   text-align: center;
 }
@@ -133,17 +147,19 @@ input.submit_btn {
   border: 1px solid #aed0ea;
 }
 input.reset_btn:hover, input.submit_btn:hover, input.say_btn:hover {
+  /* 设置鼠标悬停时文字透明度发生改变 */
   opacity: 0.85;
 }
 .star-3 {
   position: absolute;
+  /* 背景图片在水平方向上重复显示 */
   background: url(../images/feedback/star-split.jpg) repeat-x;
   width: 930px;
   height: 80px;
   right: 160px;
   top: 780px;
 }
-
+/* 给下部内容区容器设定固定的宽度，内容居中并设置margin-top的距离 */
 .content_bottom-inner {
   width: 960px;
   height: 450px;
@@ -160,12 +176,16 @@ header .word {
   border-bottom: 2px solid #fff;
   text-align: center;
 }
+
+/* 将表单内容放在自定义的表格中 */
 form#message {
+  /* survey的display属性设置成表格，宽度和高度固定，内容居中 */
   display: table;
   background-color: #d3d3d370;
   width: 660px;
   height: 150px;
   margin-left: 130px;
+  /* 给表格设置一定的边距 */
   border-spacing: 10px;
 }
 #message img {
@@ -191,12 +211,12 @@ input.say_btn {
   font-size: 24px;
   color: #fff;
   text-align: center;
-  text-transform: uppercase;
 }
 .contact-buttons {
   margin-top: 14px;
   text-align: center;
 }
+/* 给几个stay in touch 图标设置背景图片的位置，使其按顺序横向排列 */
 .contact-buttons .facebook {
   background-position: 0 0;
 }
@@ -216,15 +236,15 @@ input.say_btn {
   background: url(../images/feedback/contactIcon.png) no-repeat;
   display: inline-block;
   position: relative;
-  top: 0;
   width: 67px;
   height: 67px;
   margin: 0 4px;
+  /* 设置图标移入页面的css动画 */
   transition: 0.4s;
 }
-
 .star-1, .star-2 {
   position: absolute;
+  /* 背景图片在垂直方向上重复显示 */
   background: url(../images/feedback/star-aside.jpg) repeat-y;
   width: 80px;
   height: 1100px;

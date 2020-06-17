@@ -1,12 +1,17 @@
 /* default css */
+/* 初始化各容器的margin和padding边距为0 */
 table, tbody, th, td {
   margin: 0;
   padding: 0;
   border: none;
 }
+/* 初始化表格的边距为折叠形式 */
 table {
   border-collapse: collapse;
 }
+
+/* setting css */
+/* 凝胶布局：设置网页内容居中，自动调节margin */
 #introduction {
   width: 100%;
   margin: 0 auto;
@@ -39,6 +44,7 @@ aside#code {
   z-index: 9;
 }
 #code p {
+  /* 内容居中，左右margin自动调节 */
   margin: 5px auto 10px auto;
   font-size: 20px;
   color: #bb3232;
@@ -48,13 +54,15 @@ aside#code {
   height: 100%;
   max-height: 110px;
   padding: 0 5px 10px 5px;
+  /* 设置图片向右浮动，使得两张二维码能够并排 */
   float: right;
 }
-
 .information {
   width: 777px;
+  /* 凝胶布局，固定宽度，使内容居中，自动调节左右margin的距离 */
   margin: 0 auto;
   color: #000;
+  /* 防止字符串太长而找不到它的自然断句点时产生溢出 */
   word-wrap: break-word;
   text-align: center;
 }
@@ -85,12 +93,13 @@ td:nth-child(even) {
 }
 td.photo {
   background: url(../images/introduction/basic-information-photo.png) no-repeat center 0;
+  /* 背景图片的高度自动调节 */
   background-size: 75px auto;
   background-color: #fff;
   height: 80px;
 }
-
 aside img.decorate {
+  /* 装饰元素的位置设置成绝对定位 */
   position: absolute;
 }
 img.decorate.fighting {
@@ -120,14 +129,16 @@ td.answer {
   text-align: left;
 }
 .answer p.description {
+  /* 设置文字缩进2字符 */
   text-indent: 2em;
 }
-
 aside#phone {
+  /* fixed固定联系电话位置，使其一直在页面中显示 */
   position: fixed;
   background-color: #aacbe4a2;
   bottom: 5px;
   left: 8px;
+  /* 设置z-index 使电话不被遮挡，始终在边栏装饰的上方展示 */
   z-index: 9;
 }
 #phone p {

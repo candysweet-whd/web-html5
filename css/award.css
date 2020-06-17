@@ -1,25 +1,31 @@
 /* default css */
+/* 初始化各容器的margin和padding边距为0 */
 table, th, td {
   margin: 0;
   padding: 0;
 }
+/* 初始化表格的边距为0 */
 table {
   border-spacing: 0;
 }
+
 /* setting css */
+/* 凝胶布局：设置网页内容居中，自动调节margin */
 #award {
   width: 100%;
   margin: 0 auto;
 }
+/* 将award页面的header在index.css的基础上作改变：增加margin-top距离 */
 .header {
   margin-top: 10px;
 }
 #rocket {
-  /* 使用绝对定位，使火箭能够固定在页面上 */
+  /* 使用绝对定位，使火箭能够在页面上的位置绝对化 */
   position: absolute;
   background: url(../images/award/rocket.png) no-repeat;
   width: 270px;
   height: 160px;
+  /* 设置距离整个页面上方和左边的距离 */
   top: 185px;
   left: 0;
 }
@@ -32,8 +38,10 @@ table {
 }
 .award-table {
   width: 100%;
+  /* 给表格设置背景颜色 */
   background-color: #818df780;
   text-align: center;
+  /* 设置在垂直方向上向上对齐，默认在垂直方向上是居中对齐的 */
   vertical-align: top;
 }
 .award-table .title {
@@ -42,6 +50,7 @@ table {
   border: 1px solid #c5d9f583;
   padding: 2px 10px;
 }
+/* 标题行的文字颜色、大小、粗细和阴影都特殊化 */
 .award-table .title span {
   color: #a82929;
   font-size: 17px;
@@ -52,12 +61,15 @@ table {
   color: #ffefd5;
   font-size: 15px;
   font-weight: bold;
-  border: solid #c5d9f583;
+  /* border的粗细不相同，单独设置 */
   border-width: 0 1px 1px 1px;
+  border: solid #c5d9f583;
+  /* 给文字设置内阴影和外阴影 */
   text-shadow: 0px 1px 0px #ffffff1a, inset 0px 1px 1px #000000b3;
 }
 /* 设置表格每一行通用的css样式 */
 .specific {
+  /* 百分数平均分三列单元格的宽度 */
   width: 33%;
   height: 22px;
   color: #fff;
@@ -71,9 +83,10 @@ table {
   background: url(../images/award/explode.jpg) no-repeat;
   width: 125px;
   height: 136px;
-  top: 780px;
+  top: 770px;
   left: 10px;
 }
+/* another继承explode-left属性并覆盖top和left原来的css */
 .explode-left.another {
   top: 720px;
   left: 75px;

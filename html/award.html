@@ -17,6 +17,7 @@
 <body>
   <!-- award页面布局：凝胶布局+表格布局 -->
   <div id="award">
+
     <!-- 页眉区header -->
     <header>
       <!-- 每个页面的页眉区header都有一个公共类header-section用来放置内容，宽度固定占满整个页面，内容居中 -->
@@ -39,7 +40,7 @@
     <!-- end of header -->
 
     <!-- 导航栏nav -->
-    <nav class="naver clearfix">
+    <nav class="naver">
       <!-- 每个页面的导航栏都有一个公共类naver-section用来放置内容，宽度固定，内容居中 -->
       <section class="naver-section">
         <!-- 导航栏共分为六个部分：index、introduction、experiment、personality、award、feedback -->
@@ -93,9 +94,8 @@
       <section class="award-section">
         <!-- award-section的内容使用表格table展示: 局部表格布局 -->
         <table class="award-table">
-          <!-- award-table由三个 标题title，次级标题column，详细描述specific 组成 -->
+          <!-- award-table由三个（first、second、third）标题title，次级标题column，详细描述specific组成 -->
           <tbody>
-
             <!-- 标题行：合并三列单元格 -->
             <tr>
               <!-- 每一标题行都有一个公共类title放置内容，内容居中显示 -->
@@ -126,6 +126,7 @@
               <td class="specific">院级</td>
               <td class="specific">文明宿舍</td>
             </tr>
+            <!-- end of first -->
 
             <tr>
               <td class="title" colspan="3">
@@ -172,6 +173,7 @@
               <td class="specific">院级</td>
               <td class="specific">文艺之星、最佳团体</td>
             </tr>
+            <!-- end of second -->
 
             <tr>
               <td class="title" colspan="3">
@@ -188,7 +190,7 @@
               <td class="specific">院级</td>
               <td class="specific">优秀学生干部</td>
             </tr>
-
+            <!-- end of third -->
           </tbody>
         </table>
         <!-- end of award-table -->

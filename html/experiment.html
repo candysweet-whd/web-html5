@@ -17,6 +17,7 @@
 <body>
   <!-- 成长经历布局特点：凝胶布局+flex弹性布局 -->
   <div id="experiment">
+
     <!-- 页眉header -->
     <header>
       <!-- 每个页面的页眉区header都有一个公共类header-section用来放置内容，宽度固定，内容居中 -->
@@ -39,7 +40,7 @@
     <!-- end of header -->
 
     <!-- 导航栏nav -->
-    <nav class="naver clearfix">
+    <nav class="naver">
       <!-- 每个页面的导航栏都有一个公共类naver-section用来放置内容，宽度固定，内容居中 -->
       <section class="naver-section">
         <!-- 导航栏共分为六个部分：index、introduction、experiment、personality、award、feedback -->
@@ -76,9 +77,10 @@
       <h5 class="header">成长时间轴</h5>
       <section class="experiment-section">
         <!-- experiment-section的内容使用无序列表ul容器盛放 -->
-        <!-- ul使用弹性盒排列：局部弹性布局 -->
+        <!-- ul使用弹性盒将每个<li></li>横向排列在同一行：局部弹性布局 -->
         <ul class="tl">
-          <!-- 主要内容区大致分成 图片+描述文字 两大块 -->
+          <!-- 主要内容区可以分成若干个 图片+描述文字 区域 -->
+
           <li class="tl-img">
             <!-- 每张图片都用一个公共类tl-img来放置 -->
             <img class="image-1" src="../images/experiment/img-1.jpg">
@@ -93,6 +95,7 @@
               </span>
             </p>
           </li>
+          <!-- end of 1 -->
 
           <li class="tl-img">
             <p class="text">
@@ -106,6 +109,7 @@
               <span><em>On Secptember 10th</em>, a little girl who named Candy born in Guilin,GuangXi province.</span>
             </p>
           </li>
+          <!-- end of 2 -->
 
           <li class="tl-img">
             <p class="text">
@@ -121,6 +125,7 @@
               </span>
             </p>
           </li>
+          <!-- end of 3 -->
 
           <li class="tl-img">
             <img class="image-4" src="../images/experiment/img-4.jpg">
@@ -132,6 +137,7 @@
               </span>
             </p>
           </li>
+          <!-- end of 4 -->
 
           <li class="tl-img">
             <p class="text">
@@ -147,6 +153,7 @@
               </span>
             </p>
           </li>
+          <!-- end of 5 -->
 
           <li class="tl-img">
             <p class="text">
@@ -161,6 +168,7 @@
               </span>
             </p>
           </li>
+          <!-- end of 6 -->
 
           <li class="tl-img img-7">
             <img class="image-7" src="../images/experiment/img-7.jpg">
@@ -173,6 +181,7 @@
               </span>
             </p>
           </li>
+          <!-- end of 7 -->
 
           <li class="tl-img">
             <p class="text">
@@ -187,6 +196,7 @@
               </span>
             </p>
           </li>
+          <!-- end of 8 -->
 
           <li class="tl-img">
             <img class="image-9" src="../images/experiment/img-9.jpg">
@@ -199,6 +209,7 @@
               </span>
             </p>
           </li>
+          <!-- end of 9 -->
 
           <li class="tl-img">
             <img class="image-10" src="../images/experiment/img-10.jpg">
@@ -212,6 +223,7 @@
               </span>
             </p>
           </li>
+          <!-- end of 10 -->
 
           <li class="tl-img">
             <p class="text">
@@ -227,6 +239,7 @@
               </span>
             </p>
           </li>
+          <!-- end of 11 -->
 
           <li class="tl-img">
             <img class="image-12" src="../images/experiment/img-12.png">
@@ -239,6 +252,7 @@
               </span>
             </p>
           </li>
+          <!-- end of 12 -->
 
           <li class="tl-img">
             <p class="text">
@@ -255,11 +269,13 @@
               </span>
             </p>
           </li>
+          <!-- end of 13 -->
 
           <li class="tl-img">
             <img class="image-14" src="../images/experiment/img-14.jpg">
           </li>
           <img id="continue" src="../images/experiment/continue.png">
+          <!-- end of 14 -->
         </ul>
       </section>
       <!-- end of experiment-section -->
@@ -277,6 +293,7 @@
       </div>
     </footer>
     <!-- end of footer -->
+
   </div>
   <!-- end of experiment -->
 </body>
