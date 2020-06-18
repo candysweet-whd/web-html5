@@ -47,8 +47,6 @@ ul.tl {
   width: 100%;
   max-width: 120px;
   padding: 0 5px;
-  /* 在垂直方向上向上对齐 */
-  vertical-align: top;
   text-align: center;
 }
 .tl-img img {
@@ -87,6 +85,8 @@ p.text span.time {
   left: 0;
   right: 0;
   bottom: -12px;
+  /* z-index使时间元素靠近浏览者显示 */
+  z-index: 9;
   color: #767a4199;
   /* 给时间设置特殊的字体css */
   font: 600 0.9em "pt-sans",sans-serif;
