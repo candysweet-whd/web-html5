@@ -83,7 +83,7 @@ table {
   background: url(../images/award/explode.jpg) no-repeat;
   width: 125px;
   height: 136px;
-  top: 770px;
+  top: 760px;
   left: 10px;
 }
 /* another继承explode-left属性并覆盖top和left原来的css */
