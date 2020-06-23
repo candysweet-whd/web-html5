@@ -154,7 +154,7 @@ input.reset_btn:hover, input.submit_btn:hover, input.say_btn:hover {
   position: absolute;
   /* 背景图片在水平方向上重复显示 */
   background: url(../images/feedback/star-split.jpg) repeat-x;
-  width: 980px;
+  width: 1000px;
   height: 80px;
   right: 160px;
   top: 780px;
