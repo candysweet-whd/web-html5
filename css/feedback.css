@@ -156,7 +156,7 @@ input.reset_btn:hover, input.submit_btn:hover, input.say_btn:hover {
   background: url(../images/feedback/star-split.jpg) repeat-x;
   width: 1000px;
   height: 80px;
-  right: 160px;
+  right: 190px;
   top: 780px;
 }
 /* 给下部内容区容器设定固定的宽度，内容居中并设置margin-top的距离 */
